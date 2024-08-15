@@ -1,0 +1,119 @@
+.buttons{
+    width:50%;
+    display: flex;
+    padding: 1.2%;
+ 
+ 
+   
+    justify-content: center;
+    align-items: center;
+   
+    background-color: rgba(255, 255, 255, 0.562);
+    border-radius: 30px;
+    position:absolute;
+    bottom: 50px;
+ 
+    
+ 
+ 
+  
+ }
+ div:focus {
+    outline: none; /* Removes outline for all focused elements */
+}
+
+div:focus-visible {
+    outline: none; /* Keeps outline invisible even on focus */
+}
+ a{
+    text-decoration: none;
+    outline: none !important;
+    
+ }
+ a:focus{outline: none !important}
+
+@media screen and (max-width:650px)
+ {
+     .buttons{
+         width:80%;
+         
+         position:fixed;
+         bottom: 40px;
+ 
+     }
+ 
+     .circle-icon, .calender-icon, .call-icon, .register-icon{
+         width: 50px !important;
+         height: 50px !important;
+     }
+     .home{
+         background-image: url("../assets/mobile_background.png");
+     }
+ 
+ }
+ .icon-box {
+     display: inline-flex; /* Fit the width to content */
+     align-items: center; /* Center the icons vertically */
+     background-color: #e8ddc0; /* Background color for the icon box *  c9bc9 */
+     padding: 10px; /* Padding inside the icon box */
+     border-radius: 8px; /* Rounded corners */
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+ }
+ 
+ .home-icon{
+     width: 100%;
+  
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+  
+ }
+ .contact-icon{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .register_icon{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .events-icon{
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+ .circle-icon, .calender-icon, .call-icon, .register-icon {
+     width: 70px;
+     height: 70px;
+     border-radius: 50%;
+     background-color: #e8ddc093;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     border: 2px solid #5f1a1f;
+     
+ }
+ 
+ .circle-icon i, .calender-icon i, .call-icon i, .register-icon i {
+     
+     color: #5f1a1f;
+ }
+ .text-under-icon{
+     margin:0px;
+     display: none;
+ }
+ .text-under-icon-show{
+     margin:0px;
+     display: block;
+ }
+ 
+ 
+ 

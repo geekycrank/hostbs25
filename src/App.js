@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import Events from './components/Events';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
+import FooterNav from "./components/FooterNav";
 
 function App()
 {
@@ -20,6 +21,7 @@ function App()
       <Route path="/Register" element={<Register></Register>} />
      
     </Routes>
+    <FooterNav></FooterNav>
     
   </Router>)
 

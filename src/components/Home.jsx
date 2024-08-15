@@ -3,42 +3,25 @@ import "./Home.css";
 import "../assets/Home-bg-img.jpg";
 
 function Home() {
+   
+
   return (
     <div> 
     <div className="home" >
-    
-        <div className="buttons" >
-          <div className='home-icon'>
-          <div class="circle-icon">
-            <i class="fa-sharp fa-solid fa-house fa-2xl" ></i> 
-        </div>
+      
+      <div className="presents-quote">
+        <p>Literary debating society presents</p>
+      </div>
+        
+       <div className="Brainstrain-name">
+       <h1>Brainstrain</h1>
 
+       </div>
 
+       <div class="Timer">
+    <h2>00:00:00</h2>
+       </div> 
 
-          </div>
-    <div className='contact-icon'>
-    <div class="circle-icon">
-            <i class="fa-regular fa-calendar-check fa-2xl"></i> 
-        </div>
-
-    </div>
-
-    <div className='register_icon'>
-    <div class="circle-icon">
-            <i class="fa-solid fa-user fa-2xl"></i> 
-        </div>
-
-    </div>
-
-    <div className='events-icon'>
-    <div class="circle-icon">
-            <i class="fa-solid fa-phone fa-2xl "></i> 
-        </div>
-    
-    </div>
-           
-    
-        </div> 
         </div>
 
         <div className="about">

@@ -3,7 +3,7 @@
     background-image: url("../assets/Home-bg-img.jpg");
     background-size: cover;       /* Ensures the background image covers the entire div */
     background-position: center;  /* Centers the background image */
-    min-height: 100vh;
+    height: 95vh;
     max-width: 100vw;              /* Full viewport height */
     color: white;                 /* Text color to stand out against the background */
     text-align: center;
@@ -40,11 +40,18 @@
 {
     .buttons{
         width:80%;
+        
+        position:fixed;
+        bottom: 40px;
+
     }
 
     .circle-icon, .calender-icon, .call-icon, .register-icon{
         width: 50px !important;
         height: 50px !important;
+    }
+    .home{
+        background-image: url("../assets/mobile_background.png");
     }
 
 }
@@ -62,22 +69,30 @@
  
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
  
 }
 .contact-icon{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .register_icon{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .events-icon{
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .circle-icon, .calender-icon, .call-icon, .register-icon {
     width: 70px;
@@ -94,6 +109,14 @@
 .circle-icon i, .calender-icon i, .call-icon i, .register-icon i {
     
     color: #5f1a1f;
+}
+.text-under-icon{
+    margin:0px;
+    display: none;
+}
+.text-under-icon-show{
+    margin:0px;
+    display: block;
 }
 
 
