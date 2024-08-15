@@ -195,9 +195,107 @@
     display: block;
 }
 
-
+/* about css */
 .about{
 
-    margin-top:100px;
+    display: none;
     max-width: 100vw;
+    background-color: #5f1a1f;
+}
+
+@media screen and (max-width:650px) {
+    .about-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin:0px;
+    }
+    
+}
+.about-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 100vh;
+}
+.about-body{
+    margin:10%;
+    padding: 3%;
+    display: flex;
+    width: 60vw;
+    height: 50%;
+    background-color: #eadece;
+    border-radius: 10px;
+    text-align: center;
+    
+
+}
+.about-image{
+    width: 100%;
+    padding: 2%;
+}
+.about-image > img{
+    width: 100%;
+    border-radius:10px ;
+
+}
+.about-inner{
+    width: 100%;
+    padding: 2%;
+    width: 100%;
+    padding: 2%;
+    color: #5f1a2f;
+    
+}
+@media screen and (max-width:650px) {
+    .about-D{
+        display: none !important;
+    }
+    .about{
+        display: block;
+    }
+    
+}
+.about-D{
+    
+    background-image: url("../assets/about_desktop.jpg");
+    background-size: cover;       /* Ensures the background image covers the entire div */
+    background-position: center;  /* Centers the background image */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-D-image{
+    width: 40%;
+    height: 100%;
+    position: relative;
+}
+.about-D-image > img{
+    width: 220px;
+    height: 220px;
+    border-radius: 100%;
+    position: absolute;
+    top: 48%;
+    left: 45%;
+}
+.about-D-inner{
+    width: 60%;
+    height: 100%;
+    position: relative;
+}
+.about-D-inner > p {
+    position: absolute;
+    color: #5f1a1f;
+    font-size: 1.2rem;
+    bottom: 25%;
+    width: 80%;
+
+font-family: "Special Elite", system-ui;
+font-weight: 400;
+font-style: normal;
+white-space: normal; /* Allows wrapping */
+word-wrap: break-word; /* Breaks long words */
+word-break: break-word; /* Ensures words break properly */
+overflow: hidden; /* Hides any overflow */
 }

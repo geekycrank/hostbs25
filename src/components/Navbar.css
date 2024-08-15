@@ -1,11 +1,11 @@
 
-.grey-qo-regular {
+.brainstrain {
+  
   font-family: 'EFCOBrookshireRegular', sans-serif;
-    
   font-size: 2.0rem;
     color: rgb(40, 12, 12);
   }
-.navbar{
+.navbarr{
   z-index: 3000;
   max-width:100vw ;
   height: 10vh;
@@ -16,9 +16,10 @@
 .top-nav{
   display: none !important;
 }
-  @media  screen and (max-width:637px) {
 
-    .navbar{
+@media  screen and (max-width:637px) {
+
+    .navbarr{
       z-index: 3000 !important;
     }
   }
@@ -42,6 +43,7 @@
     width: 100%;
     font-size: 1.7rem;
     color:#eadecb;
+    margin-bottom: 0px;
 
   }
   a{
