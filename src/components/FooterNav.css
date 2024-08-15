@@ -2,6 +2,8 @@
     width:50%;
     display: flex;
     padding: 1.2%;
+    padding-left:15px;
+    padding-right: 15px;
  
  
    
@@ -9,7 +11,7 @@
     align-items: center;
    
     background-color: rgba(255, 255, 255, 0.562);
-    border-radius: 30px;
+    border-radius: 74px;
     position:absolute;
     bottom: 50px;
  
@@ -18,21 +20,15 @@
  
   
  }
- div:focus {
-    outline: none; /* Removes outline for all focused elements */
-}
-
-div:focus-visible {
-    outline: none; /* Keeps outline invisible even on focus */
-}
+ 
  a{
     text-decoration: none;
     outline: none !important;
     
  }
- a:focus{outline: none !important}
+ 
 
-@media screen and (max-width:650px)
+@media screen and (max-width:900px)
  {
      .buttons{
          width:80%;
@@ -49,6 +45,32 @@ div:focus-visible {
      .home{
          background-image: url("../assets/mobile_background.png");
      }
+     a {
+        outline: none; /* Remove the outline */
+    }
+    
+    a:focus {
+        outline: none; /* Ensure no outline when focused */
+    }
+    
+    a:active {
+        outline: none; /* Ensure no outline when active (clicked) */
+    }
+    
+    a:focus-visible {
+        outline: none; /* For accessibility */
+    }
+    
+    a:focus:not(:focus-visible) {
+        outline: none; /* For browsers supporting :focus-visible */
+    }
+    
+    /* Also, you can prevent the default tap highlight color on touch devices */
+    a {
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+     
  
  }
  .icon-box {
@@ -102,6 +124,7 @@ div:focus-visible {
      
  }
  
+ 
  .circle-icon i, .calender-icon i, .call-icon i, .register-icon i {
      
      color: #5f1a1f;
@@ -113,6 +136,13 @@ div:focus-visible {
  .text-under-icon-show{
      margin:0px;
      display: block;
+     color:#5f1a1f;
+ }
+ @media screen and (min-width:1093px)
+ {
+    .buttons{
+        display: none !important;
+     }
  }
  
  

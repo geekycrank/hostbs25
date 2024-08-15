@@ -25,7 +25,7 @@ function Footer_nav()
     <div className='home-icon'>
     <a href="/" style={{outline:"none"}} /*</div>onClick={()=>{changelink("home")}}*/>
     <div class="circle-icon">
-      <i class="fa-sharp fa-solid fa-house fa-2xl" ></i> 
+      <i class="fa-sharp fa-solid fa-house fa-xl" ></i> 
   </div>
   </a>
     <p className={link==="home"?"text-under-icon-show":"text-under-icon"}>Home</p>
@@ -35,7 +35,7 @@ function Footer_nav()
 <div className='events-icon'>
 <a href="/Events" /*onClick={()=>{changelink("events")}} */>
 <div class="circle-icon">
-      <i class="fa-regular fa-calendar-check fa-2xl"></i> 
+      <i class="fa-regular fa-calendar-check fa-xl"></i> 
   </div>
   </a>
 
@@ -46,7 +46,7 @@ function Footer_nav()
 <div className='register_icon'>
 <a href="/Register" /* onClick={()=>{changelink("register")}}*/>
 <div class="circle-icon">
-      <i class="fa-solid fa-user fa-2xl"></i> 
+      <i class="fa-solid fa-user fa-xl"></i> 
   </div>
   </a>
   <p className={link==="register"?"text-under-icon-show":"text-under-icon"}>register</p>
@@ -55,7 +55,7 @@ function Footer_nav()
 <div className='contact-icon'>
 <a href="/Contact" /*onClick={()=>{changelink("contact")}} */>
 <div class="circle-icon">
-      <i class="fa-solid fa-phone fa-2xl "></i> 
+      <i class="fa-solid fa-phone fa-xl "></i> 
   </div>
   </a>
   <p className={link==="contact"?"text-under-icon-show":"text-under-icon"}>Contact</p>

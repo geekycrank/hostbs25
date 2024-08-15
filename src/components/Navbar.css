@@ -1,18 +1,51 @@
 
 .grey-qo-regular {
-    font-family: "Grey Qo", cursive;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 4rem;
+  font-family: 'EFCOBrookshireRegular', sans-serif;
+    
+  font-size: 2.0rem;
     color: rgb(40, 12, 12);
   }
 .navbar{
   z-index: 3000;
   max-width:100vw ;
+  height: 10vh;
+  background-color: rgb(70, 24, 24);
+  color:#eadecb;
+  align-items: center;
+}
+.top-nav{
+  display: none !important;
 }
   @media  screen and (max-width:637px) {
 
     .navbar{
       z-index: 3000 !important;
     }
+  }
+  .logo{
+   
+      width: 58px;
+      border-radius: 100px;
+      max-height: 58px;
+      margin-left: 10px;
+  }
+
+  @media  screen and (min-width:1093px) {
+
+  .top-nav{
+    display: flex !important;
+    width: 50%;
+   margin-left: 30%;
+   font-family: 'EFCOBrookshireRegular', sans-serif;
+  }
+  .top-nav > p{
+    width: 100%;
+    font-size: 1.7rem;
+    color:#eadecb;
+
+  }
+  a{
+    text-decoration: none !important;
+    color: #eadecb;
+  }
   }

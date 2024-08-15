@@ -1,9 +1,25 @@
 
+@font-face {
+    font-family: "EFCOBrookshireRegular";
+    
+    src: url('../assets/fontstyles/EFCOBrookshireRegular.ttf') format('truetype');
+    
+}
+
+@font-face {
+   
+    font-family: "Giaza";
+    
+    src: url('../assets/fontstyles/Giaza.otf') format('truetype');
+    
+}
+
+
 .home{
     background-image: url("../assets/Home-bg-img.jpg");
     background-size: cover;       /* Ensures the background image covers the entire div */
     background-position: center;  /* Centers the background image */
-    height: 95vh;
+    height: 90vh;
     max-width: 100vw;              /* Full viewport height */
     color: white;                 /* Text color to stand out against the background */
     text-align: center;
@@ -15,6 +31,65 @@
         
      
 
+}
+.presents-quote{
+    margin-top:5%;
+    font-family: 'EFCOBrookshireRegular', sans-serif;
+    
+}
+.presents-quote > h3{
+   font-size: 1.5rem;
+   color: #5f1a1f;
+}
+.presents-quote > p{
+    font-family: 'EFCOBrookshireRegular', sans-serif;
+}
+.Brainstrain-name{
+    font-size: 1.5rem;
+    position: absolute;
+    top: 25%;
+    font-family: 'EFCOBrookshireRegular', sans-serif;
+    letter-spacing: 4px; 
+}
+.Brainstrain-name > h1{
+    letter-spacing: 4px; 
+    animation: shadowAnimation 3s infinite alternate;
+
+}
+
+
+/* Define the keyframes for the shadow animation */
+@keyframes shadowAnimation {
+    0% {
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2),
+                     -2px -2px 3px rgba(250, 203, 203, 0.2);
+    }
+    50% {
+        text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3),
+                     -4px -4px 6px rgba(0, 0, 0, 0.3);
+    }
+    100% {
+        text-shadow: 6px 6px 9px rgba(0, 0, 0, 0.45),
+                     -6px -6px 9px rgba(0, 0, 0, 0.45);
+    }
+}
+
+
+@media screen and (min-width:1093px){
+    .Brainstrain-name > h1{
+        font-size: 7em;
+        margin: 0px;
+    }
+   .Brainstrain-name{
+    top:30%;
+   }
+    .presents-quote > h3{
+        font-size: 2.5rem;
+    }
+    .presents-quote > p{
+        font-size: 1.5rem;
+    }
+    
 }
 .buttons{
    width:50%;
@@ -106,6 +181,7 @@
     
 }
 
+
 .circle-icon i, .calender-icon i, .call-icon i, .register-icon i {
     
     color: #5f1a1f;
@@ -123,4 +199,5 @@
 .about{
 
     margin-top:100px;
+    max-width: 100vw;
 }
