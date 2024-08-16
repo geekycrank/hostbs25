@@ -118,12 +118,12 @@
 }
 
 .custom-arrow-prev {
-    left: 30%; /* Adjust the position as needed */
-    top: 92%;
+    left: 5%; /* Adjust the position as needed */
+    top: 60%;
 }
 
 .custom-arrow-next {
-    right: 30%; /* Adjust the position as needed */
-    top: 92%;
+    right: 5%; /* Adjust the position as needed */
+    top: 60%;
 }
 

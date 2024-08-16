@@ -57,7 +57,7 @@ const WebTeam = () => {
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={3000}
+          autoPlaySpeed={1000}
           keyBoardControl={true}
           customTransition="all .5"
           transitionDuration={500}
@@ -69,7 +69,7 @@ const WebTeam = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member">
               <img src={member.image} alt={member.name} className="team-member-image" />
-              <h3 className="team-member-name">{member.name}</h3>
+              <h3 className="team-member-name" style={{color:"#5f1a1f"}}>{member.name}</h3>
               <p className="team-member-role">{member.role}</p>
             </div>
           ))}
