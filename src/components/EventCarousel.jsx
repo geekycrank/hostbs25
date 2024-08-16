@@ -27,6 +27,7 @@ function EventCarousel() {
   ];
 
   return (
+    <>
     <Carousel 
       showThumbs={false} 
       showStatus={false} 
@@ -49,6 +50,31 @@ function EventCarousel() {
         </div>
       ))}
     </Carousel>
+
+
+<Carousel 
+      showThumbs={false} 
+      showStatus={false} 
+      showIndicators={false} // Hide the dots
+      className="event-carousel" 
+      infiniteLoop={true} 
+      emulateTouch={true}>
+      {events.map((event, index) => (
+        <div key={index} className="event-slide">
+          <div className="event-image">
+            <img src={event.img} alt={event.title} />
+          </div>
+          <div className="title">
+            <h2>{event.title}</h2>
+          </div>
+          <div className="event-description">
+            <p>{event.description}</p>
+          </div>
+          <div className="rm">Read More</div>
+        </div>
+      ))}
+    </Carousel>
+    </>
   );
 }
 
