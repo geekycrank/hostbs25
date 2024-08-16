@@ -1,0 +1,129 @@
+.event-carousel {
+    height:90vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url('../assets/eventBg.png');
+}
+
+.event-slide-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.event-slide{
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 32px;
+  border: 3px solid #611A22;
+  background-color: #EEEEEE;
+  position: relative;
+  width:250px;
+  height: 500px;
+  margin-top:5%;
+}
+
+.event-image {
+    width: 210px;
+    height: 190px;
+    /* padding-top: 30px; */
+    padding-bottom: 0px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 32px;
+    position:absolute;
+    top:30px;
+    /* margin-bottom:20px; */
+}
+
+.event-image img {
+    width:230px;
+    height:190px;
+    margin-bottom:0px;
+}
+
+
+.event-description {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #EEEEEE;
+    position:absolute;
+    font-family: 'Kurale', serif;
+    color:#000000;
+    top:280px;
+    font-size:0.9em;
+    padding:10px;
+}
+
+.title {
+    width: 100%;
+    height: 50px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #490F0A;
+    color: white;
+    font-size:20px;
+    padding-top:15px;
+    font-weight: bold;
+    font-family: 'Kurale', serif;
+    margin-top: 40px; /* Add margin-top to create space */
+    margin-bottom:10px;
+    font-size: 2rem; /* Increase font size to make the title larger */
+    position:relative;
+}
+
+.title h1{
+    position:absolute;
+    bottom:20px;
+}
+
+.rm
+{
+    display:flex;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #611A22;
+    color:white;
+    font-family: 'Kurale', serif;
+    padding:3px;
+    position:absolute;
+    bottom:15px;
+    border-radius:20px;
+}
+
+
+
+.custom-arrow {
+    background: none;
+    border: none;
+    position: fixed; /* or absolute based on your design */
+    bottom: 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.custom-arrow img {
+    width: 40px;
+    height: 40px;
+}
+
+.custom-arrow-prev {
+    left: 30%; /* Adjust the position as needed */
+    top: 92%;
+}
+
+.custom-arrow-next {
+    right: 30%; /* Adjust the position as needed */
+    top: 92%;
+}
+

@@ -1,0 +1,120 @@
+.event-carousel {
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    background-image: url('../assets/eventBg.png');
+}
+
+.carousel .slide {
+    display: flex;
+    padding: 30px;
+    padding-top:10px;
+    justify-content: center;
+    background-color: #AF6E4D;
+    position: absolute;
+    position:relative;
+}
+
+.event-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 32px;
+    border: 2px solid #611A22;
+    background-color: #EEEEEE;
+    position:relative;
+    width: 250px;
+    height:500px;/* Ensure slide takes up full width */
+    /* height: px80%; Ensure slide takes up full height */
+}
+
+.event-image {
+    width: 210px;
+    height: 190px;
+    /* padding-top: 30px; */
+    padding-bottom: 0px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 32px;
+    position:absolute;
+    top:30px;
+    /* margin-bottom:20px; */
+}
+
+.event-image img {
+    width:230px;
+    height:190px;
+    margin-bottom:20px;
+}
+
+.event-description {
+    background-color: #EEEEEE;
+    border-radius: 10px;
+    position:absolute;
+    padding: 10px;
+    font-family: 'Kurale', serif;
+    color:#000000;
+    bottom:40px;
+    font-size:1em;
+}
+
+.title {
+    width: 100%;
+    height: 40px;
+    bottom: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #490F0A;
+    color: white;
+    font-size:20px;
+    padding-bottom:15px;
+    font-weight: bold;
+    font-family: 'Kurale', serif;
+    margin-top: 20px; /* Add margin-top to create space */
+    font-size: 2em; /* Increase font size to make the title larger */
+}
+
+.rm
+{
+    display:flex;
+    width:100px;
+    justify-content: center;
+    align-items: center;
+    background-color: #611A22;
+    color:white;
+    font-family: 'Kurale', serif;
+    padding:3px;
+    position:absolute;
+    bottom:15px;
+    border-radius:20px;
+}
+
+
+
+.carousel .control-dots {
+    display: none;
+}
+
+.carousel .control-arrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed; /* Change to fixed to position relative to viewport */
+    bottom: 0px; /* Position at the bottom of the page */
+    z-index: 10;
+}
+
+.carousel .control-prev.control-arrow {
+    left: 20px; /* Adjust this value as needed */
+    top:92%;
+}
+
+.carousel .control-next.control-arrow {
+    right: 20px; /* Adjust this value as needed */
+    top:92%;
+}
