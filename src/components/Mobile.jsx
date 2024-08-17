@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 
 import './Mobile.css';
-import JamImage from "../assets/jam.png";
+import JamImage from "../assets/JAM.png";
 import MicrotaleImage from "../assets/MICROTALE.png";
 import PoemImage from "../assets/POEM.png";
 import ShipwreckImage from "../assets/SHIPWRECK.png";

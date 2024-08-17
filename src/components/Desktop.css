@@ -75,7 +75,9 @@
     font-size:40px;
 }
 
-
+.eventName{
+    background-color: none !important;
+}
 
 .frame2
 {
