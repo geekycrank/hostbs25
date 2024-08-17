@@ -23,6 +23,7 @@ function App()
       by changing the props for the respecctive event here */}
         
     </Routes>
+    
      <FooterNav></FooterNav> 
     
   </Router>)
