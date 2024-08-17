@@ -1,3 +1,22 @@
+@font-face {
+    font-family: "EFCOBrookshireRegular";
+    
+    src: url('../assets/fontstyles/EFCOBrookshireRegular.ttf') format('truetype');
+    
+}
+
+@font-face {
+   
+    font-family: "Giaza";
+    
+    src: url('../assets/fontstyles/Giaza.otf') format('truetype');
+    
+}
+
+
+
+
+
 .desk{
     background-image: url("../assets/Home-bg-img.jpg");
     background-size: cover;       /* Ensures the background image covers the entire div */
@@ -96,7 +115,7 @@
     justify-content: center;
     background-color: #5f1a1f;
 
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Giaza',sans-serif;
     font-size:1.5em;
     padding:10px 30px;
 
