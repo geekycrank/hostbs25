@@ -72,7 +72,7 @@
     color:#5f1a1f;
     font-weight:550;
     font-family:sans-serif;
-    font-size:50px;
+    font-size:40px;
 }
 
 
@@ -106,6 +106,8 @@
     text-align:left;
     font-family: sans-serif;
 
+    margin-bottom:10%;
+
 }
 
 .discover
@@ -129,10 +131,13 @@
 
 @media (max-width: 1024px) {
     .description {
-        font-size: 1em; /* Reduce font size */
+        font-size: 1.2em; /* Reduce font size */
     }
     .discover {
         margin-top: 15%;
+    }
+    .eventName h1{
+        font-size:30px;
     }
 }
 

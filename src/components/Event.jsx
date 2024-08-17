@@ -1,9 +1,9 @@
 import React from "react";
 
-function Event(){
+function Event(props){
 
     return <div>
-        <h1>event1</h1>
+        <h1>{props.eventName}</h1>
     </div>
 
 }
