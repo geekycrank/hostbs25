@@ -7,9 +7,33 @@ import Events from './components/Events';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
 import FooterNav from "./components/FooterNav";
-import Event from "./Event";
+import Event from "./components/Event";
 function App()
 {
+
+  const events=[
+    {
+      eventName:"event1"
+    },
+    {
+      eventName:"event2"
+    },
+    {
+      eventName:"event3"
+    },
+    {
+      eventName:"event4"
+    },
+    {
+      eventName:"event5"
+    },
+    {
+      eventName:"event6"
+    },
+    {
+      eventName:"event7"
+    },
+  ]
  
    return(
    <Router>
@@ -19,14 +43,17 @@ function App()
       
       <Route path="/Events" element={<Events></Events>} />
       <Route path="/Register" element={<Register></Register>} />
-      <Route path="/event1" element={<Event eventName="event1"></Event>} />
-      <Route path="/event2" element={<Event eventName="event2"></Event>} />
-      <Route path="/event3" element={<Event eventName="event3"></Event>} />
-      <Route path="/event4" element={<Event eventName="event4"></Event>} />
-      <Route path="/event4" element={<Event eventName="event5"></Event>} />
+      <Route path="/event1" element={<Event eventName={events[0].eventName}></Event>} />
+      <Route path="/event2" element={<Event eventName={events[1].eventName}></Event>} />
+      <Route path="/event3" element={<Event eventName={events[2].eventName}></Event>} />
+      <Route path="/event5" element={<Event eventName={events[3].eventName}></Event>} />
+      <Route path="/event6" element={<Event eventName={events[4].eventName}></Event>} />
+      <Route path="/event7" element={<Event eventName={events[5].eventName}></Event>} />
+      <Route path="/event8" element={<Event eventName={events[6].eventName}></Event>} />
         
     </Routes>
-     <FooterNav></FooterNav> 
+    
+     {/* <FooterNav></FooterNav>  */}
     
   </Router>)
 
