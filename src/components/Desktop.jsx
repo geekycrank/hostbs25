@@ -17,9 +17,10 @@ function Desktop() {
         <div className="description">
         Get ready for a fun quiz that tests your knowledge and quick thinking. Compete with the best and aim to be the top quiz champion. Only the sharpest will win. Show your skills and rise to the challenge!
         </div>
-        <div className="discover">
+        <a href="/event1"><div className="discover">
         DISCOVER MORE
         </div>
+        </a>
     </div>
     </div>
 
@@ -36,9 +37,10 @@ function Desktop() {
         <div className="description">
         Get ready for a fun quiz that tests your knowledge and quick thinking. Compete with the best and aim to be the top quiz champion. Only the sharpest will win. Show your skills and rise to the challenge!
         </div>
-        <div className="discover">
+        <a href="/event1"><div className="discover">
         DISCOVER MORE
         </div>
+        </a>
     </div>
     </div>
 
@@ -55,9 +57,10 @@ function Desktop() {
         <div className="description">
         Get ready for a fun quiz that tests your knowledge and quick thinking. Compete with the best and aim to be the top quiz champion. Only the sharpest will win. Show your skills and rise to the challenge!
         </div>
-        <div className="discover">
+        <a href="/event1"><div className="discover">
         DISCOVER MORE
         </div>
+        </a>
     </div>
     </div>
 
@@ -75,9 +78,10 @@ function Desktop() {
         <div className="description">
         Get ready for a fun quiz that tests your knowledge and quick thinking. Compete with the best and aim to be the top quiz champion. Only the sharpest will win. Show your skills and rise to the challenge!
         </div>
-        <div className="discover">
+        <a href="/event1"><div className="discover">
         DISCOVER MORE
         </div>
+        </a>
     </div>
     </div>
 
