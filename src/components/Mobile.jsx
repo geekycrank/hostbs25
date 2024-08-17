@@ -13,38 +13,38 @@ import './Mobile.css';
 
 function Mobile()
 {
-    const events = [
-        {
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
-          title: "SHIPWRECK",
-          description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!"
-        },
-        {
-          img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
-          title: "SHIPWRECK",
-          description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
-        },
-        {
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
-          title: "SHIPWRECK",
-          description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
-        },
-        {
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
-          title: "SHIPWRECK",
-          description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
-        },
-        {
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
-          title: "SHIPWRECK",
-          description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
-        },
-        {
-          img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
-          title: "SHIPWRECK",
-          description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
-        }
-      ];
+  const events = [
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
+      title: "SHIPWRECK",
+      description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!"
+    },
+    {
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
+      title: "SHIPWRECK",
+      description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
+    },
+    {
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
+      title: "SHIPWRECK",
+      description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
+    },
+    {
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
+      title: "SHIPWRECK",
+      description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
+    },
+    {
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
+      title: "SHIPWRECK",
+      description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
+    },
+    {
+      img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn-fgwmpjs1IWLX6Zk_b1Nmx9q51-tnsixC1n7SoiMbGYCoLUw",
+      title: "SHIPWRECK",
+      description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
+    }
+  ];
     
     return (
         <div className="Mobile">

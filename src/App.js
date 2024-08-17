@@ -19,8 +19,11 @@ function App()
       
       <Route path="/Events" element={<Events></Events>} />
       <Route path="/Register" element={<Register></Register>} />
-      <Route path="/event1" element={<Event></Event>} />{/*we ll use the Event component once 
-      by changing the props for the respecctive event here */}
+      <Route path="/event1" element={<Event eventName="event1"></Event>} />
+      <Route path="/event2" element={<Event eventName="event2"></Event>} />
+      <Route path="/event3" element={<Event eventName="event3"></Event>} />
+      <Route path="/event4" element={<Event eventName="event4"></Event>} />
+      <Route path="/event4" element={<Event eventName="event5"></Event>} />
         
     </Routes>
      <FooterNav></FooterNav> 

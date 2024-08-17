@@ -36,7 +36,45 @@ function Home() {
       </div>
 
       <div className="about-page">
-        {/* ...Other sections... */}
+      <div className='about-page'>
+        <div className="about">
+           <div className='about-content'>
+           <div className="about-header">
+            <h2>About</h2>
+           </div>
+            
+           <div className="about-body">
+            <div className='about-image'><img src={bs_logo} alt="logo"></img></div>
+            <div className='about-inner'>
+              <p style={{margin:"0px",padding:"0px"}}>
+              The conglomeration of the brightest minds enhancing the participant’s knowledge and creative potentials. The 3 day annual symposium showcases 15+ events and flagship contests of crystal gazing technology. Abacus's coverage and deliberations of earlier symposia have been a grand success with insatiable thirst for technological development rejuvenating the technology with innovation. This year, Abacus is back offline on a grander scale with an innovative edge to all the events.
+
+              </p>
+            </div>
+           </div>
+           
+
+            
+           </div>
+             
+          </div>
+
+          <div className='about-D'>
+            <h1 style={{color:"#e8ddc0",marginBottom:"3%"}}>B R A I N S T R A I N ' 24</h1>
+             <div style={{display:"flex",maxWidth: "80%",height:"50%",gap:"8%"}}>
+            <div className='about-D-image' style={{width:"40%"}}>
+            <img src={logo} alt="logo"></img>
+            </div>
+
+            <div className='about-D-inner' style={{width:"60%",backgroundColor:"#e8ddc0",borderRadius:"20px",color:"#5f1a1f"}}>
+              <p style={{color:"inherit",fontSize:"1.3rem"}}>Brainstrain is an annual literary event hosted by The Literary and Debating Society of GCT, Coimbatore. Featuring over 10 events and attracting significant participation, it showcases the finest talents among competitors Brainstrain is an annual literary event hosted by The Literary and Debating Society of GCT, Coimbatore. Featuring over 10 events and attracting significant participation, it showcases the finest talents among competitors.</p>
+              
+            </div>
+            </div>
+          </div>
+
+
+          </div>
       </div>
 
       <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"5%"}}>
