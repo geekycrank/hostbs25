@@ -7,7 +7,7 @@ import Events from './components/Events';
 import Register from './components/Register';
 import Navbar from './components/Navbar';
 import FooterNav from "./components/FooterNav";
-import Event from "./Event";
+import Event from "./components/Event";
 function App()
 {
  
