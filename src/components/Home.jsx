@@ -4,6 +4,7 @@ import "../assets/Home-bg-img.jpg";
 import "../assets/about_desktop.png"
 import logo from "../assets/bslogo.png"
 import bs_logo from "../assets/about_phone.png"
+import  "../assets/Contact_bg.png";
 import WebTeam from "./WebTeam";
 import CountdownTimer from './CountdownTimer';
 
@@ -79,9 +80,10 @@ function Home() {
 
           
           
-          <div className="contact"  id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",backgroundColor:"#5f1a1f",color:"#e8ddc0",height:"50vh",padding:"2%"}}>
+          <div className="contact"  id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",color:"#e8ddc0",height:"100vh",padding:"2%"}}>
              <h1>B R A I N S T R A I N '24</h1>
-             <div class="icons" style={{display:"flex"}}>
+             <div class="body-contact">
+             <div class="icons" style={{display:"flex",alignItems:'center',justifyContent:"center",marginBottom: "4%"}}>
               <h3>icon</h3>
               <h3>icon</h3>
               <h3>icon</h3>
@@ -99,9 +101,10 @@ function Home() {
 
               </p>
              </div>
+             </div>
         </div>
-             <div>
-              <h4>Presented by The Literary and Debating Society </h4>
+             <div className='contact-last'>
+              <h4 style={{textAlign: "center"}}>Presented by The Literary and Debating Society </h4>
              </div>
 
              </div>
