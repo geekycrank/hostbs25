@@ -74,6 +74,9 @@
     font-family:sans-serif;
     font-size:40px;
 }
+.eventName{
+    background: none !important;
+}
 
 
 .frame2
