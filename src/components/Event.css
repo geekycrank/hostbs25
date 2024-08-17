@@ -1,0 +1,203 @@
+
+@font-face {
+    font-family: "EFCOBrookshireRegular";
+    
+    src: url('../assets/fontstyles/EFCOBrookshireRegular.ttf') format('truetype');
+    
+}
+
+@font-face {
+   
+    font-family: "Giaza";
+    
+    src: url('../assets/fontstyles/Giaza.otf') format('truetype');
+    
+}
+
+
+
+
+.Event{
+    background-image: url("../assets/event1Bg.png");
+    background-size: cover;       /* Ensures the background image covers the entire div */
+    background-position: center;
+    background-attachment: fixed;  /* Centers the background image */
+    height: 90h;
+    max-width: 100vw;              /* Full viewport height */
+    color: white;                 /* Text color to stand out against the background */
+    text-align: center;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.outerBox
+{
+    width:80%;
+    height:auto;
+
+    background-color: #eadecb;
+    border-radius:30px;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    
+    padding-top:2%;
+    padding-bottom:2%;
+    margin-top:5%;
+}
+
+.innerBox
+{
+    width:95%;
+    height:auto;
+
+    border:3px dashed #5f1a1f;
+    border-radius:30px;
+    padding:2%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.eventName
+{
+    display:inline-flex;
+    background-color: #5f1a1f;
+    padding:1%;
+    padding-left:2%;
+    padding-right:2%;
+    border-radius:20px;
+    margin-bottom:3%;
+
+
+    font-family: "Kurale", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:1.5em;
+
+    color:#eadecb;
+}
+
+.eventDescription
+{
+    width:98%;
+    height:auto;
+
+    /* border:2px solid black; */
+    margin-bottom:3%;
+}
+
+.descHeading
+{
+    text-align: left;
+    font-size:1.5em;
+    font-family: 'EFCOBrookshireRegular',sans-serif;
+    font-weight: bold;
+    color:#5f1a1f;
+
+    margin-bottom:1%;
+}
+
+.descContent
+{
+    text-align: left;
+    font-family: 'kurale',sans-serif;
+    color:#5f1a1f;
+}
+
+.guidelines
+{
+    width:98%;
+    height:auto;
+
+    /* border:2px solid black; */
+    margin-bottom:3%;
+}
+
+.guideHeading
+{
+    text-align: left;
+    font-size:1.5em;
+    font-family: 'EFCOBrookshireRegular',sans-serif;
+    font-weight: bold;
+    color:#5f1a1f;
+
+    margin-bottom:1%;
+}
+
+.guideContent
+{
+    text-align: left;
+    font-family: 'kurale',sans-serif;
+    color:#5f1a1f;
+}
+
+.rules
+{
+    width:98%;
+    height:auto;
+
+    /* border:2px solid black; */
+    margin-bottom:3%;
+}
+
+.rulesHeading
+{
+    text-align: left;
+    font-size:1.5em;
+    font-family: 'EFCOBrookshireRegular',sans-serif;
+    font-weight: bold;
+    color:#5f1a1f;
+
+    margin-bottom:1%;
+}
+
+.rulesContent
+{
+    text-align: left;
+    font-family: 'kurale',sans-serif;
+    color:#5f1a1f;
+}
+
+
+@media screen and (max-width: 768px) 
+{
+
+    .Event
+    {
+        background-image: url("../assets/event2Bg.jpg");    
+    }
+
+    .outerBox{
+        width:90%;
+        padding-top:5%;
+        padding-bottom:5%;
+    }
+    .innerBox{
+        width:90%;
+        padding:3%;
+        padding-top:5%;
+    }
+
+    .eventName{
+        padding:3%;
+        padding-left:5%;
+        padding-right:5%;
+
+        margin-bottom:10%;
+    }
+
+    .eventDescription{
+        margin-bottom:10%;
+    }
+
+    .guidelines{
+        margin-bottom:10%;
+    }
+    
+}

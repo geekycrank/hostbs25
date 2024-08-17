@@ -67,14 +67,13 @@
     height:90%;
 }
 
-.eventName h1
+.eventName > h1
 {
     color:#5f1a1f;
     font-weight:550;
     font-family:sans-serif;
     font-size:40px;
 }
-
 
 
 .frame2
