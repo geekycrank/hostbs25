@@ -53,10 +53,14 @@ function App()
         
     </Routes>
     
-     {/* <FooterNav></FooterNav>  */}
+     <FooterNav></FooterNav> 
     
   </Router>)
 
   }
 
 export default App;
+
+
+
+
