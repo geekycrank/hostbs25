@@ -93,7 +93,7 @@ function Desktop() {
             <div className="eventImage">
               <img src={event.img} alt="Event" />
             </div>
-            <div className="eventName">
+            <div className="eventNamee">
               <h1>{event.title}</h1>
             </div>
           </div>

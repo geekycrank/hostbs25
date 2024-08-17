@@ -67,7 +67,7 @@
     height:90%;
 }
 
-.eventName > h1
+.eventNamee > h1
 {
     color:#5f1a1f;
     font-weight:550;
@@ -75,9 +75,6 @@
     font-size:40px;
 }
 
-.eventName{
-    background-color: none !important;
-}
 
 .frame2
 {
@@ -138,7 +135,7 @@
     .discover {
         margin-top: 15%;
     }
-    .eventName h1{
+    .eventNamee h1{
         font-size:30px;
     }
 }
