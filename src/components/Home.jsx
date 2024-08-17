@@ -72,14 +72,14 @@ function Home() {
           </div>
 
 
-          <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0"}}>
+          <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"5%"}}>
           <h2 style={{textAlign:"center",color:"#5f1a1f",fontFamily:"EFCOBrookshireRegular",padding:"4%",margin:"0%"}}>Web Team</h2>
           <WebTeam></WebTeam>
           </div>
 
           
           
-          <div className="contact"  id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",backgroundColor:"#5f1a1f",color:"#e8ddc0"}}>
+          <div className="contact"  id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",backgroundColor:"#5f1a1f",color:"#e8ddc0",height:"50vh",padding:"2%"}}>
              <h1>B R A I N S T R A I N '24</h1>
              <div class="icons" style={{display:"flex"}}>
               <h3>icon</h3>
