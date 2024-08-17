@@ -35,7 +35,7 @@ function Home() {
         </div> 
       </div>
 
-      <div className="about-page">
+     
       <div className='about-page'>
         <div className="about">
            <div className='about-content'>
@@ -47,8 +47,8 @@ function Home() {
             <div className='about-image'><img src={bs_logo} alt="logo"></img></div>
             <div className='about-inner'>
               <p style={{margin:"0px",padding:"0px"}}>
-              The conglomeration of the brightest minds enhancing the participant’s knowledge and creative potentials. The 3 day annual symposium showcases 15+ events and flagship contests of crystal gazing technology. Abacus's coverage and deliberations of earlier symposia have been a grand success with insatiable thirst for technological development rejuvenating the technology with innovation. This year, Abacus is back offline on a grander scale with an innovative edge to all the events.
-
+              Brainstrain is an inter-collegiate literary fest hosted by the Literary and Debating Society of the Government College of Technology, Coimbatore. This fest features a multitude of literary events designed to bring out the hidden talents of participants while serving as a platform to connect like-minded individuals from diverse geographical backgrounds.
+             
               </p>
             </div>
            </div>
@@ -60,14 +60,16 @@ function Home() {
           </div>
 
           <div className='about-D'>
-            <h1 style={{color:"#e8ddc0",marginBottom:"3%"}}>B R A I N S T R A I N ' 24</h1>
-             <div style={{display:"flex",maxWidth: "80%",height:"50%",gap:"8%"}}>
+            <h1 style={{color:"#e8ddc0",marginBottom:"3%",fontSize:"2.5rem"}}>A b o u t</h1>
+             <div className="about-D-body" style={{display:"flex",maxWidth: "80%",height:"50%",gap:"8%"}}>
             <div className='about-D-image' style={{width:"40%"}}>
             <img src={logo} alt="logo"></img>
             </div>
 
             <div className='about-D-inner' style={{width:"60%",backgroundColor:"#e8ddc0",borderRadius:"20px",color:"#5f1a1f"}}>
-              <p style={{color:"inherit",fontSize:"1.3rem"}}>Brainstrain is an annual literary event hosted by The Literary and Debating Society of GCT, Coimbatore. Featuring over 10 events and attracting significant participation, it showcases the finest talents among competitors Brainstrain is an annual literary event hosted by The Literary and Debating Society of GCT, Coimbatore. Featuring over 10 events and attracting significant participation, it showcases the finest talents among competitors.</p>
+              <p style={{color:"inherit",fontSize:"1.3rem"}}>
+              Brainstrain is an inter-collegiate literary fest hosted by the Literary and Debating Society of the Government College of Technology, Coimbatore. This fest features a multitude of literary events designed to bring out the hidden talents of participants while serving as a platform to connect like-minded individuals from diverse geographical backgrounds.
+              </p>
               
             </div>
             </div>
@@ -75,7 +77,7 @@ function Home() {
 
 
           </div>
-      </div>
+      
 
       <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"5%"}}>
         <h2 style={{textAlign:"center",color:"#5f1a1f",fontFamily:"EFCOBrookshireRegular",padding:"4%",margin:"0%"}}>Web Team</h2>
@@ -86,22 +88,29 @@ function Home() {
         <h1>B R A I N S T R A I N '24</h1>
         <div className="body-contact">
           <div className="icons" style={{display:"flex",alignItems:'center',justifyContent:"center",marginBottom: "4%"}}>
-            <div className="icon1" >
-              <FontAwesomeIcon className="iconImage" icon={faEnvelope} style={{color: "#611a22",}} />
+          <a href="mailto:litsociety.gct@gmail.com" target='blank'>
+            <div className="icon1" style={{width:"58px",height:"58px"}}>
+             <FontAwesomeIcon className="iconImage" icon={faEnvelope} style={{color: "#611a22",}} />
             </div>
-            <div className="icon2" >
+            </a>
+
+            <a href="https://www.instagram.com/literary_and_debating_society/" target='blank'>
+            <div className="icon2"  style={{width:"58px",height:"58px"}} >
             <FontAwesomeIcon className="iconImage" icon={faInstagram} style={{color: "#611a22",}} />
             </div>
-            <div className="icon3" >
+            </a>
+            <a href="https://www.instagram.com/literary_and_debating_society/" target='blank'>
+            <div className="icon3"  style={{width:"58px",height:"58px"}}>
             <FontAwesomeIcon className="iconImage" icon={faLinkedinIn} style={{color: "#611a22",}} />
             </div>
+            </a>
           </div>
 
           <div className="contact-details" style={{textAlign:'center'}}>
             <h2>CONTACT</h2>
             <div>
               <p>Arivumathi - 9876543210</p>
-              <p>Arivumathi - 9876543210</p>
+              <p>Dhanvarshan - 8220916740</p>
             </div>
           </div>
         </div>

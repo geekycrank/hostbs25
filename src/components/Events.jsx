@@ -1,5 +1,5 @@
 import React from 'react';
-import WebTeam from './WebTeam.jsx'
+
 import Carousel from './Carousel.jsx';
 
 function Events() {
