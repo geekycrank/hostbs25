@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import "./Register.css"
+import "./Register.css";
+import QrImage from '../assets/Qr.webp';
 
 function Register() {
   // const [formData, setFormData] = useState({
@@ -64,14 +65,70 @@ function Register() {
                 <div className="field">Whatsapp No*</div>
                 <input type="text"/>
               </div>
-              {/* <div className="Name">
+              <div className="Name">
                 <div className="field">College Name*</div>
                 <input type="text"/>
               </div>
               <div className="Name">
                 <div className="field">Place of Stay*</div>
                 <input type="text"/>
-              </div> */}
+              </div>
+
+
+
+
+              {/* Mobile View */}
+              <div id="bottom" className="Name">
+                <div className="field">Events Participating*</div>
+                <select className="select">
+                  <option value="" disabled selected>Drop Down</option>
+                  <option value="event1">Event 1</option>
+                  <option value="event2">Event 2</option>
+                  <option value="event3">Event 3</option>
+                  <option value="event4">Event 4</option>
+                  <option value="event5">Event 5</option>
+                </select>
+              </div>
+              <div id="bottom" className="Name">
+                <div className="field">Are you participating in Drama?*</div>
+                <select className="select">
+                  <option value="" disabled selected>Drop Down</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
+                </select>
+              </div>
+              <div id="MobQr">
+                 <img src={QrImage}></img>
+              </div>
+              <h2>Scan here to pay</h2>
+              <div id="bottom" className="Name">
+                <div className="field">Transaction Id*</div>
+                <input type="text"/>
+              </div>
+
+
+           
+              
+          {/* Desktop View */}
+          <div className="bottomFrame" id="frameBottom">
+              <div className="bottomInput">
+              <div className="Name">
+                <div className="field">Whatsapp No*</div>
+                <input type="text"/>
+              </div>
+              <div className="Name">
+                <div className="field">College Name*</div>
+                <input type="text"/>
+              </div>
+              <div className="Name">
+                <div className="field">Place of Stay*</div>
+                <input type="text"/>
+              </div>
+              </div>
+              <div className="bottomQr">
+
+              </div>
+          </div>
           </div>
        </form>
     </div>
