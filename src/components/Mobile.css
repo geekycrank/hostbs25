@@ -34,7 +34,7 @@
 .event-slide
 {
     width:75%;
-    height:75vh;
+    height:62vh;
     border: 4px solid #611A22;
     background-color: #EEEEEE;
 
@@ -87,25 +87,26 @@
 
 .event-description
 {
-    height:37%;
-    width:100%;
-    padding:5%;
-    
-    display:flex;
-    align-items:center;
-    justify-content: center;
+   
 
-
-    color:black;
-    font-size:1em;
-    font-weight:bold;
+    height: 55%;
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    color: black;
+    font-size: 1em;
+    font-weight: bold;
+    overflow: hidden;
     font-family: 'Kurale', serif;
+   
+    justify-content: center;
 }
 
 /* Read More */
 .rm
 {
-    height:8%;
+    margin-top: 2%;
+    height: 9%;
     width:40%;
     background-color: #611A22;
     border-radius:20px;
