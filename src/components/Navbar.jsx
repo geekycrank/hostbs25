@@ -23,7 +23,6 @@ function Navbar() {
         else if(currentPath[1]==="e" && currentPath[5]==='t')
         {
           setLink("event");
-
         }
     }, [location]); // Runs whenever the location changes
   return (

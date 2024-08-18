@@ -127,50 +127,12 @@
 .bottomFrame
 {
     width:100%;
-    height:300px;
-    background-color:#eadecb;
+    height:auto;
 
-    border:2px solid black;
-    display:flex;
-    align-items:center;
-    justify-content:center;
 }
 
-.bottomInput
-{
-    width:50%;
-    height:100%;
-
-    border:2px solid black;
-
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
-}
-
-.bottomQr
-{
-    width:50%;
-    height:100%;
-}
-
-#MobQr
-{
-    display:none;
-}
-
-h2{
-    display:none;
-}
-
-#MobQr img {
-    display:none;
-  }
-
-
-  /* Bottom Frame */
-  .select {
-    width:90%;
+.bottomFrame .select{
+    width:85%;
     height:40px;
 
     border-radius:30px;
@@ -185,31 +147,30 @@ h2{
     transition: all 0.3s ease;
     padding-left:10%;
     text-align:left;
-  }
-  
-  /* Style for options */
-  .select option {
+}
+
+.bottomFrame .select option
+{
     background-color: #905a1e;/* Background color for options */
     color: #333; /* Text color for options */
+}
+
+#MobQr
+{
+    display:none;
+}
+
+.QrContent{
+    display:none;
+}
+
+#MobQr img {
+    display:none;
   }
+
+
+
   
-  /* Hover effect */
-  .select:hover {
-    background-color: #905a1e;/* Background color on hover */
-    border-color: #3e8e41; /* Border color on hover */
-  }
-  
-  /* Focus effect */
-  .select:focus {
-    outline: none;
-    border-color: #3e8e41; /* Border color on focus */
-    background-color: #905a1e; /* Background color on focus */
-  }
-  
-  /* Disabled option */
-  .select option:disabled {
-    color: #aaa;
-  }
 
 
 
@@ -331,7 +292,7 @@ h2{
     justify-content:center;
   }
   
-  h2{
+  .QrContent{
     display:block;
     font-family:kurale;
     color:#794937;
@@ -344,6 +305,11 @@ h2{
   }
 
   #frameBottom
+  {
+    display:none;
+  }
+
+  #top
   {
     display:none;
   }
