@@ -18,6 +18,9 @@ function Footer_nav()
         } else if (currentPath === "/Register") {
             setLink("register");
         }
+        else if (currentPath[1] === "e" && currentPath[2]==='v') {
+            setLink("event");
+        }
     }, [location]); // Runs whenever the location changes
     return <div style={{display:"flex",justifyContent:"center"}}>
 
@@ -51,7 +54,7 @@ function Footer_nav()
   </a>
   <p className={link==="register"?"text-under-icon-show":"text-under-icon"}>register</p>
 </div>
-{link!=="events" &&
+{link!=="events"  && link!=="register" && link!=="event" &&
 <div className='contact-icon'>
 <a href="#Contact" /*onClick={()=>{changelink("contact")}} */>
 <div class="circle-icon">
