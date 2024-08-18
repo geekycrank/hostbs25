@@ -30,8 +30,8 @@ function Mobile()
     {
       link:"/event1",
       img: JamImage,
-      title: "JAM",
-      description: "Just A Minute (JAM) is an exhilarating event that challenges participants to speak spontaneously on a given topic for one minute. This fast-paced competition not only tests quick thinking and creativity but also hones communication skills under pressure, providing an adrenaline-fueled experience that pushes speakers to their limits."
+      title: "ADZAP",
+      description: "Pitch the most outrageous product ideas imaginable! Say invisible socks or a smartphone that only works when you're asleep. Get creative, get funny, and keep the audience in stitches."
     },
     {
       link:"/event2",
