@@ -20,6 +20,10 @@ function Navbar() {
         } else if (currentPath === "/Register") {
             setLink("register");
         }
+        else if(currentPath[1]==="e" && currentPath[5]==='t')
+        {
+          setLink("event");
+        }
     }, [location]); // Runs whenever the location changes
   return (
     <nav class="navbarr" style={{width:"100%",display:"flex"}} >
@@ -29,7 +33,7 @@ function Navbar() {
           <p><a href="/">home</a></p>
           <p><a href="/Events">events</a></p>
           <p><a href="/Register">register</a></p>
-          {(link!=="events" && link !=="register") &&
+          {(link!=="events" && link !=="register" && link !=="event") &&
           <p><a href="#Contact">contact</a></p>
           }
          </div>
