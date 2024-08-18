@@ -51,7 +51,7 @@ function Footer_nav()
   </a>
   <p className={link==="register"?"text-under-icon-show":"text-under-icon"}>register</p>
 </div>
-{link!=="events" &&
+{(link!=="events" && link!=="register")&&
 <div className='contact-icon'>
 <a href="#Contact" /*onClick={()=>{changelink("contact")}} */>
 <div class="circle-icon">

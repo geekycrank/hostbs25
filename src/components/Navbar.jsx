@@ -29,7 +29,7 @@ function Navbar() {
           <p><a href="/">home</a></p>
           <p><a href="/Events">events</a></p>
           <p><a href="/Register">register</a></p>
-          {link!=="events" &&
+          {(link!=="events" && link !=="register") &&
           <p><a href="#Contact">contact</a></p>
           }
          </div>
