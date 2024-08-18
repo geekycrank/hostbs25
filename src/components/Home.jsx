@@ -46,7 +46,7 @@ function Home() {
            <div className="about-body">
             <div className='about-image'><img src={bs_logo} alt="logo"></img></div>
             <div className='about-inner'>
-              <p style={{margin:"0px",padding:"0px"}}>
+              <p style={{margin:"0px",padding:"0px",fontSize:"1.5rem",fontFamily:"Kurale"}}>
               Brainstrain is an inter-collegiate literary fest hosted by the Literary and Debating Society of the Government College of Technology, Coimbatore. This fest features a multitude of literary events designed to bring out the hidden talents of participants while serving as a platform to connect like-minded individuals from diverse geographical backgrounds.
              
               </p>

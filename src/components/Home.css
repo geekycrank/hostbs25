@@ -45,16 +45,22 @@
 }
 .presents-quote > p{
     font-family: 'EFCOBrookshireRegular', sans-serif;
+    margin-top: 5%;
 }
 .Brainstrain-name{
     font-size: 1.5rem;
     position: absolute;
     top: 25%;
+    width: 100%;
+    text-align: center;
     font-family: 'EFCOBrookshireRegular', sans-serif;
     letter-spacing: 4px; 
 }
 .Brainstrain-name > h1{
+    font-size: 2.5rem;
     letter-spacing: 4px; 
+    text-align: center;
+    
     animation: shadowAnimation 3s infinite alternate;
 
 }
@@ -319,10 +325,10 @@ border-radius: 20px;
 .about-D-inner > p {
     display: flex;
     color: #5f1a1f;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
  
 
-font-family: "Special Elite", system-ui;
+font-family:"Kurale", serif;
 
 
 

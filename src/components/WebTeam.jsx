@@ -11,23 +11,33 @@ import "react-multi-carousel/lib/styles.css";
 const WebTeam = () => {
     const teamMembers = [
         {
-          name: "John Doe",
-          role: "Frontend Developer",
+          name: "GiriDharan",
+          role: "Web Developer",
           image: logo // Replace with actual image paths
         },
         {
-          name: "Jane Smith",
-          role: "Backend Developer",
+          name: "BarathKumar",
+          role: "Web Developer",
           image: logo 
         },
         {
-          name: "Emily Johnson",
-          role: "Full Stack Developer",
+          name: "Megavannan",
+          role: "Designer",
           image: logo 
         },
         {
-          name: "Michael Brown",
-          role: "UI/UX Designer",
+          name: "Balasakthi",
+          role: "UI Designer",
+          image: logo 
+        },
+        {
+          name: "RagaPriyanka",
+          role: "Designer",
+          image: logo 
+        },
+        {
+          name: "Balaji",
+          role: "Designer",
           image: logo 
         }
         // Add more team members as needed

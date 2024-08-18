@@ -33,21 +33,24 @@ function App()
       eventName:"DEBATE",
       description:"Prepare to engage in a battle of wits, where your critical thinking and communication skills will be put to the ultimate test. This event is designed to test your ability to argue both for and against a given topic, clearly and coherently, in a limited time setting.",
       guidelines:[
-        "Individual Participation.",
-        "Two-round event."
+         "Individual Participation.",
+    "Two-round event."
       ],
       prelims:[
-        'Each team should have 4-6 members.',
-        'You will have 7 minutes to brainstorm and script your ad.',
-        'Your performance should last 4-5 minutes. Going over the time limit will cost you points.',
-        'Make sure your humor is clean. Offensive content or vulgar language is not allowed.',
-        "The judge's decision is final."
+        "Contestants will receive a topic just before they are set to speak. Preparation time of one minute will be allotted.",
+        "Each contestant will have 3 minutes to deliver their speech.",
+        "Block and Tackle:",
+        "- When prompted to 'BLOCK,' the contestant must speak against the topic.",
+        "- When prompted to 'TACKLE,' the contestant must speak in favor of the topic.",
+        "- The transitions between BLOCK and TACKLE will occur multiple times within the 3-minute time frame."
       ],
       finals:[
         "Teams will be formed from those selected in Round 1.",
-        "Teams will be given a topic 10 minutes before the debate begins.",
-        "Speech Structure:- \nThe first two contestants from each team will present arguments in favor of the topic.\n- The third contestant will present a rebuttal speech, countering the points made by the opposing team.",
-        "The jury's decision will be final."
+      "Teams will be given a topic 10 minutes before the debate begins.",
+      "Speech Structure:",
+      "- The first two contestants from each team will present arguments in favor of the topic.",
+      "- The third contestant will present a rebuttal speech, countering the points made by the opposing team.",
+      "The jury's decision will be final."
       ]
     },
     
@@ -116,7 +119,7 @@ function App()
         "It is a single-round event.",
         "If any means of malpractice is found, the participant will be immediately disqualified."
       ],
-      rules: [
+      prelims: [
         "The topic will be given on the spot.",
         "The contestant has to write a tale on the given topic in less than 40 words.",
         "Plagiarism should be strictly avoided.",
@@ -133,7 +136,7 @@ function App()
         "It is a single-round event.",
         "Topics will be given on the spot."
       ],
-      rules: [
+      prelims: [
         "The poem should have a minimum of 8 lines and should not exceed 16 lines.",
         "Strictly avoid plagiarism.",
         "Poems containing vulgarity, profanity, or offensive/inappropriate content will not be considered for evaluation.",
@@ -148,7 +151,7 @@ function App()
         "Two members per team.",
         "It is a single-round event."
       ],
-      rules: [
+      prelims: [
         "Duration: 30 minutes.",
         "The use of mobile phones or digital aids is not allowed.",
         "Cheating or malpractice is strictly prohibited.",
@@ -232,10 +235,10 @@ function App()
       <Route path="/event5" element={<Event eventName={events[4].eventName} eventDescription={events[4].description} eventGuidelines={events[4].guidelines} eventRules={events[4].prelims} eventFinals={events[4].finals}></Event>} />
       <Route path="/event6" element={<Event eventName={events[5].eventName} eventDescription={events[5].description} eventGuidelines={events[5].guidelines} eventRules={events[5].prelims} eventFinals={events[5].finals}></Event>} />
       <Route path="/event7" element={<Event eventName={events[6].eventName} eventDescription={events[6].description} eventGuidelines={events[6].guidelines} eventRules={events[6].prelims} eventFinals={events[6].finals}></Event>} />
-      <Route path="/event8" element={<Event eventName={events[6].eventName} eventDescription={events[6].description} eventGuidelines={events[6].guidelines} eventRules={events[6].prelims} eventFinals={events[6].finals}></Event>} />
-      <Route path="/event9" element={<Event eventName={events[6].eventName} eventDescription={events[6].description} eventGuidelines={events[6].guidelines} eventRules={events[6].prelims} eventFinals={events[6].finals}></Event>} />
-      <Route path="/event10" element={<Event eventName={events[6].eventName} eventDescription={events[6].description} eventGuidelines={events[6].guidelines} eventRules={events[6].prelims} eventFinals={events[6].finals}></Event>} />
-      <Route path="/event11" element={<Event eventName={events[6].eventName} eventDescription={events[6].description} eventGuidelines={events[6].guidelines} eventRules={events[6].prelims} eventFinals={events[6].finals}></Event>} />
+      <Route path="/event8" element={<Event eventName={events[7].eventName} eventDescription={events[7].description} eventGuidelines={events[7].guidelines} eventRules={events[7].prelims} eventFinals={events[7].finals}></Event>} />
+      <Route path="/event9" element={<Event eventName={events[8].eventName} eventDescription={events[8].description} eventGuidelines={events[8].guidelines} eventRules={events[8].prelims} eventFinals={events[8].finals}></Event>} />
+      <Route path="/event10" element={<Event eventName={events[9].eventName} eventDescription={events[9].description} eventGuidelines={events[9].guidelines} eventRules={events[9].prelims} eventFinals={events[9].finals}></Event>} />
+      <Route path="/event11" element={<Event eventName={events[10].eventName} eventDescription={events[10].description} eventGuidelines={events[10].guidelines} eventRules={events[10].prelims} eventFinals={events[10].finals}></Event>} />
       
     </Routes>
     
