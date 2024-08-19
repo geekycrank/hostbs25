@@ -99,12 +99,7 @@ function Home() {
             <FontAwesomeIcon className="iconImage" icon={faInstagram} style={{color: "#611a22",}} />
             </div>
             </a>
-            <a href="https://www.instagram.com/literary_and_debating_society/" target='blank'>
-            <div className="icon3"  style={{width:"58px",height:"58px"}}>
-            <FontAwesomeIcon className="iconImage" icon={faLinkedinIn} style={{color: "#611a22",}} />
             </div>
-            </a>
-          </div>
 
           <div className="contact-details" style={{textAlign:'center'}}>
             <h2>CONTACT</h2>
@@ -116,7 +111,7 @@ function Home() {
         </div>
 
         <div className="contact-last">
-          <h4 style={{textAlign: "center"}}>Presented by The Literary and Debating Society </h4>
+          <h4 style={{textAlign: "center"}}>Powered by The Literary and Debating Society </h4>
         </div>
       </div>
     </div>

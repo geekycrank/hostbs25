@@ -52,7 +52,13 @@ function Event(props) {
               </ol>
             </div>
           )}
+
+          <div className="prize-pool" style={{display:"flex",width:"100%", color:"#5f1a1f",fontFamily:"kurale"}}>
+              <h3 style={{width:"100%"}}>Ph:{props.contact}</h3>
+              <h3 style={{width:"100%"}}>PRIZE POOL Rs.{props.prize}</h3>
+            </div>
         </div>
+
       </div>
     </div>
   );

@@ -107,7 +107,7 @@
 {
     margin-top: 2%;
     height: 9%;
-    width:40%;
+    width: 50%;
     background-color: #611A22;
     border-radius:20px;
     font-family: 'Kurale', serif;
@@ -118,6 +118,7 @@
 
     margin-bottom:3%;
     cursor:pointer;
+
 }
 
 

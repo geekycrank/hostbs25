@@ -237,7 +237,7 @@
 .about-header{
     color:#e8ddc0;
     margin: 5%;
-    margin-top:15%;
+    margin-top:25%;
     
     font-family:"EFCOBrookshireRegular",sans-serif; 
 }
@@ -255,7 +255,7 @@
     height: 50%;
     background-color: #eadece;
     border-radius: 10px;
-    text-align: center;
+    text-align: left;
     
 
 }
