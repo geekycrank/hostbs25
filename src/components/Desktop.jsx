@@ -11,6 +11,9 @@ import PuzzleCrosswordImage from "../assets/PUZZLECROSSWORD.png";
 import UnoMinutoImage from "../assets/UNO-MINUTO.png";
 import AdzapImage from "../assets/ADZAP.png";
 import DramaImage from "../assets/DRAMA.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
+
 
 
 
@@ -125,7 +128,7 @@ function Desktop() {
               {event.description}
             </div>
             <div style={{display:"flex",width:"100%",margin:"5%", color:"#5f1a1f",fontFamily:"kurale"}}>
-              <h3 style={{width:"100%"}}>Ph:{event.contact}</h3>
+              <h3 style={{width:"100%"}}><FontAwesomeIcon icon={faPhone} style={{color: "#5f1a1f",marginRight:"3%"}} />{event.contact}</h3>
               <h3 style={{width:"100%"}}>PRIZE POOL Rs.{event.prize}</h3>
             </div>
             <a href={event.link}>

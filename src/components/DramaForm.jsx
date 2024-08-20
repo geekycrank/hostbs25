@@ -21,6 +21,18 @@ function DramaForm()
 
       const handleSubmit = async (e) => {
         e.preventDefault();
+
+        if (
+          !formData.name ||
+          !formData.Lead_name ||
+          !formData.Lead_bs_id ||
+          !formData.Lead_contact ||
+          !formData.alternate_contact ||
+          !formData.members_bs_id 
+        ) {
+          alert('Please fill out all fields.');
+          return;
+        }
     
         // Log form data to console
         console.log(formData.events);
@@ -100,7 +112,7 @@ function DramaForm()
           <div className="Name">
           <div className="field">alternate_contact*</div>
           <input
-            type="text"
+            type="number"
             name="alternate_contact"
             onChange={handleChange}
             required

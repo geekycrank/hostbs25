@@ -60,6 +60,21 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (
+      !formData.name ||
+      !formData.email ||
+      !formData.phone ||
+      !formData.whatsapp ||
+      !formData.college ||
+      !formData.place ||
+      !formData.events.length ||
+      !formData.drama ||
+      !formData.transactionId
+    ) {
+      alert('Please fill out all fields.');
+      return;
+    }
     
     // Log form data to console
     console.log(formData.events);
@@ -137,7 +152,7 @@ function Register() {
           <div className="Name">
             <div className="field">Phone No*</div>
             <input
-              type="text"
+              type="number"
               name="phone"
               value={formData.phone}
               onChange={handleChange}
@@ -147,7 +162,7 @@ function Register() {
           <div className="Name">
             <div className="field">Whatsapp No*</div>
             <input
-              type="text"
+              type="number"
               name="whatsapp"
               value={formData.whatsapp}
               onChange={handleChange}
@@ -189,17 +204,17 @@ function Register() {
               <option value="" disabled>
                 Drop Down
               </option>
-              <option value="Event 1">Event 1</option>
-              <option value="Event 2">Event 2</option>
-              <option value="Event 3">Event 3</option>
-              <option value="Event 4">Event 4</option>
-              <option value="Event 5">Event 5</option>
-              <option value="Event 6">Event 6</option>
-              <option value="Event 7">Event 7</option>
-              <option value="Event 8">Event 8</option>
-              <option value="Event 9">Event 9</option>
-              <option value="Event 10">Event 10</option>
-              <option value="Event 11">Event 11</option>
+              <option value="ADZAP">ADZAP</option>
+              <option value="DEBATE">DEBATE</option>
+              <option value="DRAMA">DRAMA</option>
+              <option value="DUMB-C">DUMB-C</option>
+              <option value="JAM">JAM</option>
+              <option value="MICROTALE">MICROTALE</option>
+              <option value="POEM">POEM</option>
+              <option value="PUZZLECROSSWORD">PUZZLECROSSWORD</option>
+              <option value="QUIZ">QUIZ</option>
+              <option value="SHIPWRECK">SHIPWRECK</option>
+              <option value="UNO MINUTO">UNO MINUTO</option>
             </select>
           </div>
 
@@ -245,61 +260,61 @@ function Register() {
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 1"
-                    checked={formData.events.includes('Event 1')}
+                    value="ADZAP"
+                    checked={formData.events.includes('ADZAP')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 1
+                  ADZAP
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 2"
-                    checked={formData.events.includes('Event 2')}
+                    value="DEBATE"
+                    checked={formData.events.includes('DEBATE')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 2
+                  DEBATE
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 3"
-                    checked={formData.events.includes('Event 3')}
+                    value="DRAMA"
+                    checked={formData.events.includes('DRAMA')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 3
+                  DRAMA
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 4"
-                    checked={formData.events.includes('Event 4')}
+                    value="DUMB-C"
+                    checked={formData.events.includes('DUMB-C')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 4
+                  DUMB-C
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 5"
-                    checked={formData.events.includes('Event 5')}
+                    value="JAM"
+                    checked={formData.events.includes('JAM')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 5
+                  JAM
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 6"
-                    checked={formData.events.includes('Event 6')}
+                    value="MICROTALE"
+                    checked={formData.events.includes('MICROTALE')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 6
+                  MICROTALE
                 </label>
               </div>
               <div className='lower_events'>
@@ -307,51 +322,51 @@ function Register() {
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 7"
-                    checked={formData.events.includes('Event 7')}
+                    value="POEM"
+                    checked={formData.events.includes('POEM')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 7
+                  POEM
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 8"
-                    checked={formData.events.includes('Event 8')}
+                    value="PUZZLECROSSWORD"
+                    checked={formData.events.includes('PUZZLECROSSWORD')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 8
+                  PUZZLECROSSWORD
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 9"
-                    checked={formData.events.includes('Event 9')}
+                    value="QUIZ"
+                    checked={formData.events.includes('QUIZ')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 9
+                  QUIZ
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 10"
-                    checked={formData.events.includes('Event 10')}
+                    value="SHIPWRECK"
+                    checked={formData.events.includes('SHIPWRECK')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 10
+                  SHIPWRECK
                 </label>
                 <label className='labell'>
                   <input
                     className='input'
                     type="checkbox"
-                    value="Event 11"
-                    checked={formData.events.includes('Event 11')}
+                    value="UNO MINUTO"
+                    checked={formData.events.includes('UNO MINUTO')}
                     onChange={handleCheckboxChange}
                   />
-                  Event 11
+                  UNO MINUTO
                 </label>
               </div>
             </div>

@@ -18,12 +18,6 @@ import DramaImage from "../assets/DRAMA.png";
 
 
 
-
-
-
-
-
-
 function Mobile()
 {
   const events = [
@@ -122,7 +116,7 @@ function Mobile()
           <div className="event-description">
              {event.description}
           </div>
-          <div className="rm"  onClick={() => handleDivClick(event.link)}>Discover More</div>
+          <div className="rm"  onClick={() => handleDivClick(event.link)}>Read More</div>
         </div>
       ))}
     </Carousel>

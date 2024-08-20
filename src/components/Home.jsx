@@ -85,7 +85,8 @@ function Home() {
       </div>
           
       <div className="contact" id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",color:"#e8ddc0",height:"100vh",padding:"2%"}}>
-        <h1>B R A I N S T R A I N '24</h1>
+        <h1 style={{fontFamily:"EFCOBrookshireRegular",fontSize:"1.4rem",fontSize: "2.4rem",height: "25%",
+    paddingTop: "17%"}}>Contact</h1>
         <div className="body-contact">
           <div className="icons" style={{display:"flex",alignItems:'center',justifyContent:"center",marginBottom: "4%"}}>
           <a href="mailto:litsociety.gct@gmail.com" target='blank'>
@@ -102,9 +103,9 @@ function Home() {
             </div>
 
           <div className="contact-details" style={{textAlign:'center'}}>
-            <h2>CONTACT</h2>
+            
             <div>
-              <p>Arivumathi - 9876543210</p>
+              <p>Arivumathi - 9344346700</p>
               <p>Dhanvarshan - 8220916740</p>
             </div>
           </div>
