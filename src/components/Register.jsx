@@ -19,6 +19,7 @@ function Register() {
 
   const [submitted,setSubmimtted]=useState(false);
   const [showDramaForm, setShowDramaForm] = useState(false);
+  const [bsId,setBsid]=useState(1000);
 
 
 
@@ -61,6 +62,9 @@ function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+
+    console.log(bsId);
+    setBsid(bsId+1);
     if (
       !formData.name ||
       !formData.email ||
@@ -77,7 +81,7 @@ function Register() {
     }
     
     // Log form data to console
-    console.log(formData.events);
+    // console.log(formData.events);
 
     const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf7o5E-Ik8uufICKUNzkH-MNZmX9zRiryqYfHS1ZbJDuoePbw/formResponse';
     const formPayload = new URLSearchParams();
@@ -102,7 +106,7 @@ function Register() {
         },
       });
     } catch (error) {
-      console.error('Form submission error:', error);
+      // console.error('Form submission error:', error);
     }
     alert('Form submitted successfully!');
 
@@ -155,7 +159,7 @@ function Register() {
             />
           </div>
           <div className="Name">
-            <div className="field">Whatsapp No*</div>
+            <div className="field">WhatsApp No*</div>
             <input
               type="number"
               name="whatsapp"
@@ -175,7 +179,7 @@ function Register() {
             />
           </div>
           <div className="Name">
-            <div className="field">Place of Stay*</div>
+            <div className="field">Residence Location*</div>
             <input
               type="text"
               name="place"

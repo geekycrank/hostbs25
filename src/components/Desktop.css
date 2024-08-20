@@ -36,7 +36,7 @@
 .frame1
 {
     width:27%;
-    height:80%;
+    height:90%;
     border:5px solid #5f1a1f;
     border-right-width:3px;
     border-top-left-radius: 20px;
@@ -78,7 +78,7 @@
 .frame2
 {
     width:55%;
-    height:80%;
+    height:90%;
     border:5px solid #5f1a1f;
     border-left-width:0px;
     border-top-right-radius: 20px;

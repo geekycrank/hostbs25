@@ -26,7 +26,7 @@ function Home() {
         </div>
         
         <div className="Brainstrain-name">
-          <h1>BrainStrain `24</h1>
+          <h1>BrainStrain '24</h1>
           <p>starts in</p>
         </div>
 
