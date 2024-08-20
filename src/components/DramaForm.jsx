@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import Register from './Register.jsx';
 
-function DramaForm() {
+function DramaForm(props) {
   const [formData, setFormData] = useState({
     name: '',
     Lead_name: '',
@@ -87,10 +87,10 @@ function DramaForm() {
             </div>
 
             <div className="Name">
-              <div className="field">Lead BS Id*</div>
+              <div className="field">Lead Transaction Id*</div>
               <input
                 type="text"
-                name="Lead_bs_id"
+                name="Lead_contact"
                 onChange={handleChange}
                 required
               />
@@ -118,7 +118,7 @@ function DramaForm() {
             </div>
 
             <div className="Name">
-              <div className="field">Members Bs Id*</div>
+              <div className="field">Members' Transaction Id*</div>
               <textarea
                 name="members_bs_id"
                 rows="4"
