@@ -52,7 +52,7 @@ function Footer_nav()
       <i class="fa-solid fa-user fa-xl"></i> 
   </div>
   </a>
-  <p className={link==="register"?"text-under-icon-show":"text-under-icon"}>register</p>
+  <p className={link==="register"?"text-under-icon-show":"text-under-icon"}>Register</p>
 </div>
 {(link!=="events"  && link!=="register" && link!=="event" && link!=="register")&&
 <div className='contact-icon'>

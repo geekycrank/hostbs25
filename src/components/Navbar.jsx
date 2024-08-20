@@ -28,7 +28,7 @@ function Navbar() {
   return (
     <nav class="navbarr" style={{width:"100%",display:"flex"}} >
          <img src={logo} alt="logo" className="logo"></img>
-        <h2 className='brainstrain' style={{margin:"0px",color:'inherit',paddingLeft:"10px"} }>BrainStrain `24</h2>
+        <h2 className='brainstrain' style={{margin:"0px",color:'inherit',paddingLeft:"10px"} }>BrainStrain '24</h2>
          <div class="top-nav">
           <p id="spark"><a href="/">home</a></p>
           <p id="spark"><a href="/Events">events</a></p>
