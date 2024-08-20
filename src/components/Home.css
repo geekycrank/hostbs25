@@ -370,7 +370,7 @@ align-items: center;
 
 }
 .body-contact{
-    height: 40%;
+    height: 50%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -397,7 +397,7 @@ align-items: center;
 @media screen and (min-width:1000px) {
    
 .contact-last{
-    height:30%;
+    height:25%;
     display: flex;
   
     align-items: center;
