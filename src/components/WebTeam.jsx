@@ -2,6 +2,13 @@ import React from "react";
 
 import logo from  "../assets/bslogo.png";
 import "./WebTeam.css";
+import giri from "../assets/Giri.jpg";
+import barath from "../assets/Barath.jpeg";
+import megu from "../assets/Megu.jpg";
+import bala from "../assets/Bala.jpg";
+import raga from "../assets/Raga.jpg";
+import balaji from "../assets/Balaji.jpg";
+
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
@@ -11,34 +18,34 @@ import "react-multi-carousel/lib/styles.css";
 const WebTeam = () => {
     const teamMembers = [
         {
-          name: "GiriDharan",
+          name: "Giridharan",
           role: "Web Developer",
-          image: logo // Replace with actual image paths
+          image: giri // Replace with actual image paths
         },
         {
           name: "BarathKumar",
           role: "Web Developer",
-          image: logo 
+          image: barath 
         },
         {
           name: "Megavannan",
           role: "Designer",
-          image: logo 
+          image: megu
         },
         {
           name: "Balasakthi",
           role: "UI Designer",
-          image: logo 
+          image: bala
         },
         {
           name: "RagaPriyanka",
           role: "Designer",
-          image: logo 
+          image: raga
         },
         {
           name: "Balaji",
           role: "Designer",
-          image: logo 
+          image: balaji
         }
         // Add more team members as needed
       ];
@@ -62,14 +69,14 @@ const WebTeam = () => {
         <Carousel
           swipeable={true}
           draggable={true}
-          //showDots={true}
+          showDots={true}
           responsive={responsive}
           ssr={true} // means to render carousel on server-side.
           infinite={true}
           autoPlay={true}
-          autoPlaySpeed={2000}
+          autoPlaySpeed={3000}
           keyBoardControl={true}
-          customTransition="all .5"
+          customTransition="transform 1s ease"
           transitionDuration={1000}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["tablet", "mobile"]}
@@ -79,7 +86,7 @@ const WebTeam = () => {
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member">
               <img src={member.image} alt={member.name} className="team-member-image" />
-              <h3 className="team-member-name" style={{color:"#5f1a1f"}}>{member.name}</h3>
+              <h3 className="team-member-name" style={{color:"#5f1a1f",fontFamily:"kurale"}}>{member.name}</h3>
               <p className="team-member-role">{member.role}</p>
             </div>
           ))}

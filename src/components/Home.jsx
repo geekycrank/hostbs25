@@ -26,7 +26,7 @@ function Home() {
         </div>
         
         <div className="Brainstrain-name">
-          <h1>BrainStrain'24</h1>
+          <h1>BrainStrain `24</h1>
           <p>starts in</p>
         </div>
 
@@ -79,14 +79,14 @@ function Home() {
           </div>
       
 
-      <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"5%"}}>
+      <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"3%",height: "80vh"}}>
         <h2 style={{textAlign:"center",color:"#5f1a1f",fontFamily:"EFCOBrookshireRegular",padding:"4%",margin:"0%"}}>Web Team</h2>
         <WebTeam></WebTeam>
       </div>
           
       <div className="contact" id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",color:"#e8ddc0",height:"100vh",padding:"2%"}}>
         <h1 style={{fontFamily:"EFCOBrookshireRegular",fontSize:"1.4rem",fontSize: "2.4rem",height: "25%",
-    paddingTop: "17%"}}>Contact</h1>
+    paddingTop: "72px"}}>Contact</h1>
         <div className="body-contact">
           <div className="icons" style={{display:"flex",alignItems:'center',justifyContent:"center",marginBottom: "4%"}}>
           <a href="mailto:litsociety.gct@gmail.com" target='blank'>
@@ -106,7 +106,7 @@ function Home() {
             
             <div>
               <p>Arivumathi - 9344346700</p>
-              <p>Dhanvarshan - 8220916740</p>
+              <p>Dhanvarashan - 8220916740</p>
             </div>
           </div>
         </div>

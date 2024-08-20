@@ -23,4 +23,19 @@
     font-size: 1rem;
     color: #555;
   }
-  
+  /* Custom styles for the dots */
+.custom-dot-list-style .react-multi-carousel-dot button {
+  background-color: #5f1a1f; /* Change this to your desired color */
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+margin-top: 3%;
+}
+
+.custom-dot-list-style .react-multi-carousel-dot--active button {
+  background-color: #f7b731; /* Change this to your desired active color */
+}
+.react-multi-carousel-list {
+  height: 60vh !important;
+
+}
