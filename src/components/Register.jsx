@@ -58,8 +58,57 @@ function Register() {
     setFormData({ ...formData, events: updatedEvents });
   };
 
+  const validateForm = () => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    const phonePattern = /^[0-9]{10}$/;
+
+    if (!formData.name) {
+      alert("Please enter your name.");
+      return false;
+    }
+    if (!formData.email || !emailPattern.test(formData.email)) {
+      alert("Please enter a valid email address.");
+      return false;
+    }
+    if (!formData.phone || formData.phone.toString().length!=10) {
+      alert("Please enter a valid 10-digit phone number.");
+      return false;
+    }
+    if (!formData.whatsapp || formData.whatsapp.toString().length!=10) {
+      alert("Please enter a valid 10-digit WhatsApp number.");
+      return false;
+    }
+    if (!formData.college) {
+      alert("Please enter your college name.");
+      return false;
+    }
+    if (!formData.place) {
+      alert("Please enter your college city.");
+      return false;
+    }
+    if (!formData.events.length) {
+      alert("Please select at least one event.");
+      return false;
+    }
+    if (!formData.drama) {
+      alert("Please select your participation in drama.");
+      return false;
+    }
+    if (!formData.transactionId) {
+      alert("Please enter your transaction ID.");
+      return false;
+    }
+
+    return true;
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+
+    if (!validateForm()) {
+      return;
+    }
 
 
     if (
