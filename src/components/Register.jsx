@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./Register.css";
-import QrImage from '../assets/Qr.webp';
+import QrImage from '../assets/QrImage.jpg';
 import DramaForm from './DramaForm';
 
 function Register() {
@@ -101,15 +101,10 @@ function Register() {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       });
-      if (response.status === 200) {
-        alert('Form submitted successfully!');
-      } else {
-        alert('Form submission failed!');
-      }
     } catch (error) {
       console.error('Form submission error:', error);
-      alert('Form submission failed!');
     }
+    alert('Form submitted successfully!');
 
     
 
@@ -211,7 +206,7 @@ function Register() {
               <option value="JAM">JAM</option>
               <option value="MICROTALE">MICROTALE</option>
               <option value="POEM">POEM</option>
-              <option value="PUZZLECROSSWORD">PUZZLECROSSWORD</option>
+              <option value="PUZZLE">PUZZLECROSSWORD</option>
               <option value="QUIZ">QUIZ</option>
               <option value="SHIPWRECK">SHIPWRECK</option>
               <option value="UNO MINUTO">UNO MINUTO</option>
@@ -235,7 +230,7 @@ function Register() {
               <option value="No">No</option>
             </select>
           </div>
-          <h3 className="QrContent" style={{marginBottom:"6%"}}>UPI ID:8940152465@paytm</h3>
+          <h3 className="QrContent" style={{marginBottom:"6%"}}>UPI ID:madhusankar309@okhdfcbank</h3>
           <div id="MobQr">
             <img src={QrImage} alt="QR Code for Payment" />
           </div>
@@ -336,7 +331,7 @@ function Register() {
                     checked={formData.events.includes('PUZZLECROSSWORD')}
                     onChange={handleCheckboxChange}
                   />
-                  PUZZLECROSSWORD
+                  PUZZLE
                 </label>
                 <label className='labell'>
                   <input
@@ -380,14 +375,13 @@ function Register() {
                 required
               >
                 <option value="" disabled>
-                  Drop Down
                 </option>
                 <option value="Yes">Yes</option>
                 <option value="No">No</option>
               </select>
             </div>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: "center", fontFamily: "kurale", color: "black", margin: "2%" }}>
-              <h4>UPI ID: giridharan</h4>
+              <h4>UPI ID: madhusankar309@okhdfcbank</h4>
               <div className='deskqr'>
                 <img src={QrImage} alt="QR Code for Payment" />
               </div>

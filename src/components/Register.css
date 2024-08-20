@@ -161,7 +161,7 @@
 
 
 #top{
-    width: 80%;
+    width: 100%;
     font-size: 1.3rem;
     display: flex;
     flex-direction: column;
@@ -189,7 +189,7 @@ font-family: "kurale",sans-serif;
 .upper_events{
     padding:1%;
     display: flex;
-    width:80%;
+    width:100%;
     justify-content: center;
     align-items: center;
    
@@ -201,7 +201,7 @@ font-family: "kurale",sans-serif;
 .lower_events{
     padding:1%;
     display: flex;
-    width:80%;
+    width:100%;
     justify-content: center;
     align-items: center;
     
@@ -232,8 +232,8 @@ font-family: "kurale",sans-serif;
 }
 .deskqr img {
     display:block;
-    width:90%;
-    height:90%;
+    width:80%;
+    height:80%;
   }
 
 
@@ -448,8 +448,8 @@ input[type=number] {
 
   #MobQr img {
     display:block;
-    width:90%;
-    height:90%;
+    width:80%;
+    height:80%;
   }
 
   #frameBottom

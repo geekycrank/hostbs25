@@ -22,14 +22,15 @@ function Desktop() {
   const events = [
     {
       link: "/event1",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"7010922948",
+      prize:"2250",
       img: AdzapImage,
       title: "Adzap",
       description: "Pitch the most outrageous product ideas imaginable! Say invisible socks or a smartphone that only works when you're asleep. Get creative, get funny, and keep the audience in stitches."
     },
     {
-      link: "/event2",contact:"8940152456",
+      link: "/event2",
+      contact:"7845080225",
       prize:"1500",
       img: DebateImage,
       title: "Debate",
@@ -38,16 +39,16 @@ function Desktop() {
     
     {
       link: "/event3",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"8248255395",
+      prize:"3750",
       img: DramaImage,
       title: "Drama",
       description: "Get ready to bring your acting skills to life and command the stage! This is your moment to step into the spotlight and show the world what you’ve got. It’s not just about performing—it’s about seizing the chance to be at the centre of attention and express your passion for drama. Get ready to entertain, explore, and let your talent shine when it’s your time to take the stage. The stage is set, and the spotlight is waiting for you!"
     },
     {
       link: "/event4",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"9551014349",
+      prize:"2250",
       img: DumbCImage,
       title: "Dumb-C",
       description: "Demonstrate your perfect partnership with a game of Dumb Charades! This classic and entertaining game invites you and your partner to get imaginative with clues and lively gestures. It’s an ideal way to highlight your teamwork while enjoying endless laughs together!"
@@ -55,7 +56,7 @@ function Desktop() {
     
     {
       link: "/event5",
-      contact:"8940152456",
+      contact:"9344346700",
       prize:"1500",
       img: JamImage,
       title: "Jam",
@@ -63,7 +64,7 @@ function Desktop() {
     },
     {
       link: "/event6",
-      contact:"8940152456",
+      contact:"8667721591",
       prize:"1500",
       img: MicrotaleImage,
       title: "Microtale",
@@ -71,7 +72,7 @@ function Desktop() {
     },
     {
       link: "/event7",
-      contact:"8940152456",
+      contact:"8667721591",
       prize:"1500",
       img: PoemImage,
       title: "Poem",
@@ -79,29 +80,31 @@ function Desktop() {
     },
     {
       link: "/event8",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"7812868428",
+      prize:"2250",
       img: PuzzleCrosswordImage,
       title: "Puzzle",
       description: "Prepare to twist your mind and challenge your thinking at our Puzzle Event! Dive into a world of brainteasers that will test your logic and creativity. From cryptic riddles to intricate puzzles, every challenge will test your logic and wit. Are you ready to unlock the mysteries?"
     },
     {
       link: "/event9",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"8072477148",
+      prize:"2250",
       img: QuizImage,
       title: "Quiz",
       description: "Get ready for a fun quiz that tests your knowledge and quick thinking. Compete with the best and aim to be the top quiz champion. Only the sharpest will win. Show your skills and rise to the challenge!"
     },
     {
       link: "/event10",
+      contact:"6374437435",
+      prize:"1500",
       img: ShipwreckImage,
       title: "Shipwreck",
       description: "A Tempest of wit and wisdom, where words and sense of humour are the life boats that save or sink, you're a crewmate on a sinking ship, and there's only one life jacket left. Your mission? Convince the captain to save you!."
     },
     {
       link: "/event11",
-      contact:"8940152456",
+      contact:"9361140647",
       prize:"1500",
       img: UnoMinutoImage,
       title: "Uno Minuto",

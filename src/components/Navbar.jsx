@@ -30,11 +30,11 @@ function Navbar() {
          <img src={logo} alt="logo" className="logo"></img>
         <h2 className='brainstrain' style={{margin:"0px",color:'inherit',paddingLeft:"10px"} }>BrainStrain `24</h2>
          <div class="top-nav">
-          <p><a href="/">home</a></p>
-          <p><a href="/Events">events</a></p>
-          <p><a href="/Register">register</a></p>
+          <p id="spark"><a href="/">home</a></p>
+          <p id="spark"><a href="/Events">events</a></p>
+          <p id="spark"><a href="/Register">register</a></p>
           {(link!=="events" && link !=="register" && link !=="event") &&
-          <p><a href="#Contact">contact</a></p>
+          <p id="spark"><a href="#Contact">contact</a></p>
           }
          </div>
     </nav>

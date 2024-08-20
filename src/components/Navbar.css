@@ -51,3 +51,50 @@
     color: #eadecb;
   }
   }
+
+
+
+  #spark {
+    position: relative; /* Ensure the spark effect positions correctly */
+    overflow: hidden; /* Hide any overflow from spark effect */
+  }
+  
+  /* Styling the links */
+  #spark a {
+    text-decoration: none;
+    font-size: 1.7rem;
+    padding: 14px 16px;
+    position: relative; /* Ensure the spark effect positions correctly */
+    transition: color 0.3s;
+  }
+  
+  /* Spark effect on hover */
+  #spark a:hover::before,
+  #spark a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(255,255,255,0.5) 80%);
+    opacity: 0;
+    pointer-events: none; /* Prevent interaction with the spark effect */
+    animation: spark 1s ease-out forwards; /* Apply the animation */
+  }
+  
+  /* Create spark effect */
+  #spark a:hover::before {
+    transform: scale(1.2); /* Enlarge the spark */
+  }
+  
+  @keyframes spark {
+    0% {
+      opacity: 1;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.2);
+    }
+  }
