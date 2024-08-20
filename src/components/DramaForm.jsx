@@ -89,8 +89,8 @@ function DramaForm(props) {
             <div className="Name">
               <div className="field">Lead Transaction Id*</div>
               <input
-                type="text"
-                name="Lead_contact"
+                type="number"
+                name="Lead_bs_id"
                 onChange={handleChange}
                 required
               />
