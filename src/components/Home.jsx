@@ -86,7 +86,7 @@ function Home() {
           
       <div className="contact" id="Contact" style={{display:"flex",flexDirection:"column",alignItems:"center",color:"#e8ddc0",height:"100vh",padding:"2%"}}>
         <h1 style={{fontFamily:"EFCOBrookshireRegular",fontSize:"1.4rem",fontSize: "2.4rem",height: "25%",
-    paddingTop: "72px"}}>Contact</h1>
+    paddingTop: "5%"}}>Contact</h1>
         <div className="body-contact">
           <div className="icons" style={{display:"flex",alignItems:'center',justifyContent:"center",marginBottom: "4%"}}>
           <a href="mailto:litsociety.gct@gmail.com" target='blank'>
