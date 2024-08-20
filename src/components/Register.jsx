@@ -19,7 +19,6 @@ function Register() {
 
   const [submitted,setSubmimtted]=useState(false);
   const [showDramaForm, setShowDramaForm] = useState(false);
-  const [bsId,setBsid]=useState(1000);
 
 
 
@@ -63,8 +62,6 @@ function Register() {
     e.preventDefault();
 
 
-    console.log(bsId);
-    setBsid(bsId+1);
     if (
       !formData.name ||
       !formData.email ||
@@ -108,9 +105,8 @@ function Register() {
     } catch (error) {
       // console.error('Form submission error:', error);
     }
-    alert('Form submitted successfully!');
 
-    
+    alert("Form Submitted Successfully...")
 
   setSubmimtted(true);
   if (formData.drama==="Yes") {
@@ -410,7 +406,7 @@ function Register() {
           Submit
         </botton>
       </form>):
-      (showDramaForm && <DramaForm />)
+      (showDramaForm && <DramaForm transactionId={formData.transactionId}/>)
       }
     </div>);
 
