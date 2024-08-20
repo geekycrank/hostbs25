@@ -15,8 +15,8 @@ function App()
   const events=[
     {
       eventName:"ADZAP",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"7010922948",
+      prize:"2250",
       description:"Pitch the most outrageous product ideas imaginable! Say invisible socks or a smartphone that only works when you're asleep. Get creative, get funny, and keep the audience in stitches.",
       guidelines:[
         'Your product idea/ad should be unique and humorous. Think outside the box.',
@@ -34,7 +34,7 @@ function App()
     },
     {
       eventName:"DEBATE",
-      contact:"8940152456",
+      contact:"7845080225",
       prize:"1500",
       description:"Prepare to engage in a battle of wits, where your critical thinking and communication skills will be put to the ultimate test. This event is designed to test your ability to argue both for and against a given topic, clearly and coherently, in a limited time setting.",
       guidelines:[
@@ -61,8 +61,8 @@ function App()
     
     {
       eventName:"DRAMA",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"8248255395",
+      prize:"3750",
       description:"Get ready to bring your acting skills to life and command the stage! This is your moment to step into the spotlight and show the world what you’ve got. It’s not just about performing—it’s about seizing the chance to be at the center of attention and express your passion for drama. Get ready to entertain, explore, and let your talent shine when it’s your time to take the stage. The stage is set, and the spotlight is waiting for you!",
       guidelines:[
         'The first round of the event will be conducted based on the scripts submitted by the participating teams. Teams that are shortlisted for the final round will be notified via WhatsApp.'
@@ -71,7 +71,7 @@ function App()
       prelims:[
         'Each participating team must consist of 8-10 members. No request to change this shall be entertained.',
         'Teams are required to bring their own props and costumes. Hazardous materials or substances are strictly prohibited on stage. All props must be removed from the stage immediately after the performance.',
-        '.Each team is allotted a maximum of 20 minutes for their performance, including setup and cleanup time.',
+        'Each team is allotted a maximum of 20 minutes for their performance, including setup and cleanup time.',
         'Teams that exceed the time limit or violate any of the rules will face disqualification.',
         'Participants must arrive on time and adhere to all instructions provided at the start of the event.',
         'The use of obscene language, offensive content, or themes that may offend any group is strictly prohibited.',
@@ -83,8 +83,8 @@ function App()
     },
     {
       eventName:"DUMB C",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"9551014349",
+      prize:"2250",
       description:"Demonstrate your perfect partnership with a game of Dumb Charades! This classic and entertaining game invites you and your partner to get imaginative with clues and lively gestures. It’s an ideal way to highlight your teamwork while enjoying endless laughs together!",
       guidelines:[
         'Each team should consist of 2 members.',
@@ -101,7 +101,7 @@ function App()
     },
     {
       eventName: "JAM",
-      contact:"8940152456",
+      contact:"9344346700",
       prize:"1500",
       description: "Just A Minute (JAM) is an exhilarating event that challenges participants to speak spontaneously on a given topic for one minute. This fast-paced competition not only tests quick thinking and creativity but also hones communication skills under pressure, providing an adrenaline-fueled experience that pushes speakers to their limits.",
       guidelines: [
@@ -124,7 +124,7 @@ function App()
     ,
     {
       eventName: "MICROTALE",
-      contact:"8940152456",
+      contact:"8667721591",
       prize:"1500",
       description: "Embark on a literary journey of brevity and depth at our Microtale event! With just a few words, weave stories that linger in minds and hearts. Join us for poetic magic where the tiniest tales hold the mightiest power by unleashing your creativity and crafting miniature worlds where every letter counts.",
       guidelines: [
@@ -143,7 +143,7 @@ function App()
     },
     {
       eventName: "POEM",
-      contact:"8940152456",
+      contact:"8667721591",
       prize:"1500",
       description: "Step into a realm where words dance with imagery; let the picture guide your lyrical spree. Participants will be given a picture about which they have to write a poem on a topic that best suits it.",
       guidelines: [
@@ -161,8 +161,8 @@ function App()
     },
     {
       eventName: "PUZZLE",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"7812868428",
+      prize:"2250",
       description: "Prepare to twist your mind and challenge your thinking at our Puzzle event! Dive into a world of brainteasers that will test your logic and creativity. From cryptic riddles to intricate puzzles, every challenge will test your logic and wit. Ready to unlock the mysteries?",
       guidelines: [
         "Two members per team.",
@@ -177,8 +177,8 @@ function App()
     },
     {
       eventName: "QUIZ",
-      contact:"8940152456",
-      prize:"1500",
+      contact:"8072477148",
+      prize:"2250",
       description: "Get ready for a fun quiz that tests your knowledge and quick thinking. Compete with the best and aim to be the top quiz champion. Only the sharpest will win. Show your skills and rise to the challenge!",
       guidelines: [
         "Each team should consist of 2 members.",
@@ -195,7 +195,7 @@ function App()
     },
     {
       eventName: "SHIPWRECK",
-      contact:"8940152456",
+      contact:"6374437435",
       prize:"1500",
       description: "A tempest of wit and wisdom, where words and a sense of humor are the lifeboats that save or sink. You’re a crewmate on a sinking ship, and there’s only one life jacket left. Your mission? Convince the captain to save you!",
       guidelines: [
@@ -221,7 +221,7 @@ function App()
     
     ,{
       eventName: "UNO MINUTO",
-      contact:"8940152456",
+      contact:"9361140647",
       prize:"1500",
       description: "Are you a person who can stun the observer with your electrifying performance? Then, this is for you! The stage is all yours for those 60 seconds. May it be any talent that makes you unique, may it be anything. Come on, people! Indulge us in astonishment with your stunning talents! The stage awaits.",
       guidelines: [
