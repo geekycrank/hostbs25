@@ -45,16 +45,16 @@ function App()
         "Contestants will receive a topic just before they are set to speak. Preparation time of one minute will be allotted.",
         "Each contestant will have 3 minutes to deliver their speech.",
         "Block and Tackle:",
-        "- When prompted to 'BLOCK,' the contestant must speak against the topic.",
+        ["- When prompted to 'BLOCK,' the contestant must speak against the topic.",
         "- When prompted to 'TACKLE,' the contestant must speak in favor of the topic.",
-        "- The transitions between BLOCK and TACKLE will occur multiple times within the 3-minute time frame."
+        "- The transitions between BLOCK and TACKLE will occur multiple times within the 3-minute time frame."]
       ],
       finals:[
         "Teams will be formed from those selected in Round 1.",
       "Teams will be given a topic 10 minutes before the debate begins.",
       "Speech Structure:",
-      "- The first two contestants from each team will present arguments in favor of the topic.",
-      "- The third contestant will present a rebuttal speech, countering the points made by the opposing team.",
+      ["- The first two contestants from each team will present arguments in favor of the topic.",
+      "- The third contestant will present a rebuttal speech, countering the points made by the opposing team."],
       "The jury's decision will be final."
       ]
     },
@@ -257,7 +257,7 @@ function App()
       <Route path="/event3" element={<Event eventName={events[2].eventName} contact={events[2].contact} prize={events[2].prize} eventDescription={events[2].description} eventGuidelines={events[2].guidelines} eventRules={events[2].prelims} eventFinals={events[2].finals}></Event>} />
       <Route path="/event4" element={<Event eventName={events[3].eventName} contact={events[3].contact} prize={events[3].prize} eventDescription={events[3].description} eventGuidelines={events[3].guidelines} eventRules={events[3].prelims} eventFinals={events[3].finals}></Event>} />
       <Route path="/event5" element={<Event eventName={events[4].eventName} contact={events[4].contact} prize={events[4].prize} eventDescription={events[4].description} eventGuidelines={events[4].guidelines} eventRules={events[4].prelims} eventFinals={events[4].finals}></Event>} />
-      <Route path="/event6" element={<Event eventName={events[4].eventName} contact={events[5].contact} prize={events[5].prize} eventDescription={events[4].description} eventGuidelines={events[4].guidelines} eventRules={events[4].prelims} eventFinals={events[4].finals}></Event>} />
+      <Route path="/event6" element={<Event eventName={events[5].eventName} contact={events[5].contact} prize={events[5].prize} eventDescription={events[5].description} eventGuidelines={events[5].guidelines} eventRules={events[5].prelims} eventFinals={events[5].finals}></Event>} />
       <Route path="/event7" element={<Event eventName={events[6].eventName} contact={events[6].contact} prize={events[6].prize} eventDescription={events[6].description} eventGuidelines={events[6].guidelines} eventRules={events[6].prelims} eventFinals={events[6].finals}></Event>} />
       <Route path="/event8" element={<Event eventName={events[7].eventName} contact={events[7].contact} prize={events[7].prize} eventDescription={events[7].description} eventGuidelines={events[7].guidelines} eventRules={events[7].prelims} eventFinals={events[7].finals}></Event>} />
       <Route path="/event9" element={<Event eventName={events[8].eventName} contact={events[8].contact} prize={events[8].prize} eventDescription={events[8].description} eventGuidelines={events[8].guidelines} eventRules={events[8].prelims} eventFinals={events[8].finals}></Event>} />
