@@ -88,7 +88,7 @@
 .Name
 {
     width:50%;
-    height:80px;
+      height: 5%;
 
     /* border:2px solid black; */
     text-align:center;
@@ -283,6 +283,7 @@ font-family: "kurale",sans-serif;
 
    .drama{
 margin: 4%;
+height: 15%;
    }
 
 

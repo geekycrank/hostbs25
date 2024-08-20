@@ -179,7 +179,7 @@ function Register() {
             />
           </div>
           <div className="Name">
-            <div className="field">Residence Location*</div>
+            <div className="field">College City*</div>
             <input
               type="text"
               name="place"
@@ -218,8 +218,14 @@ function Register() {
           </div>
 
 
-          <div id="bottom" className="Name">
+          <div id="bottom" className="Name" >
+             
             <div className="field">Are you participating in Drama?*</div>
+            <div class="field">
+              
+                **[NOTE : Select YES only if you are the Drama team lead, team members can answer NO.]
+              
+            </div>
             <select
               className="select"
               name="drama"
@@ -234,7 +240,7 @@ function Register() {
               <option value="No">No</option>
             </select>
           </div>
-          <h3 className="QrContent" style={{marginBottom:"6%"}}>UPI ID:madhusankar309@okhdfcbank</h3>
+         
           <div id="MobQr">
             <img src={QrImage} alt="QR Code for Payment" />
           </div>
@@ -369,8 +375,14 @@ function Register() {
                 </label>
               </div>
             </div>
+            
             <div className="Name drama">
               <div className="field">Are you participating in Drama?*</div>
+              <div>
+              <h5 style={{fontWeight:"900;"}}>
+                **[NOTE : Select YES only if you are the Drama team lead, team members can answer NO.]
+              </h5>
+            </div>
               <select
                 className="select"
                 name="drama"
@@ -385,7 +397,7 @@ function Register() {
               </select>
             </div>
             <div style={{ display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: "center", fontFamily: "kurale", color: "black", margin: "2%" }}>
-              <h4>UPI ID: madhusankar309@okhdfcbank</h4>
+             
               <div className='deskqr'>
                 <img src={QrImage} alt="QR Code for Payment" />
               </div>

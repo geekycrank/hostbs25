@@ -79,7 +79,7 @@ function Home() {
           </div>
       
 
-      <div style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"3%",height: "90vh"}}>
+      <div className="team" style={{display:"flex",flexDirection:"column",backgroundColor:"#e8ddc0",paddingBottom:"3%",height: "90vh"}}>
         <h2 style={{textAlign:"center",color:"#5f1a1f",fontFamily:"EFCOBrookshireRegular",padding:"4%",margin:"0%"}}>Web Team</h2>
         <WebTeam></WebTeam>
       </div>
