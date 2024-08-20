@@ -224,7 +224,6 @@ function Register() {
               required
             >
               <option value="" disabled>
-                Drop Down
               </option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
