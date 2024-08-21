@@ -20,8 +20,45 @@ function DramaForm(props) {
     console.log(value);
   };
 
+
+  const validateForm = () => {
+    const phonePattern = /^[0-9]{10}$/;
+  
+    if (!formData.name) {
+      alert("Please enter your college name.");
+      return false;
+    }
+    if (!formData.Lead_name) {
+      alert("Please enter the team Leader's name.");
+      return false;
+    }
+    if (!formData.Lead_contact || formData.Lead_contact.toString().length !=10) {
+      alert("Please enter a valid 10-digit Lead Contact number.");
+      return false;
+    }
+    if (!formData.alternate_contact || formData.alternate_contact.toString().length !=10) {
+      alert("Please enter a valid 10-digit Alternate Contact number.");
+      return false;
+    }
+    if (!formData.Lead_bs_id) {
+      alert("Please enter the Lead Transaction ID.");
+      return false;
+    }
+    if (!formData.members_bs_id) {
+      alert("Please enter the Members' Transaction ID.");
+      return false;
+    }
+  
+    return true;
+  };
+  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!validateForm()) {
+      return;
+    }
 
     if (
       !formData.name ||
