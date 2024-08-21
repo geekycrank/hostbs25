@@ -285,7 +285,20 @@ font-family: "kurale",sans-serif;
 margin: 4%;
 height: 15%;
    }
-
+.Notee{
+  padding-bottom: 3%;
+    color: black;
+    font-family: 'Kurale';
+    font-size: 1.2rem;
+}
+@media screen and (max-width:623px) {
+  .Notee{
+    padding-bottom: 5% !important;
+      color: black;
+      font-family: 'Kurale';
+      font-size: 1rem !important;
+  }
+}
 
    .submitButton
   {

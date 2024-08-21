@@ -107,6 +107,7 @@ function DramaForm(props) {
           <div className="heading1">DRAMA REGISTRATION</div>
 
           <div className="topFrame">
+           <div className='Notee'>Note: Only one registration is required per drama group, to be completed by the lead participant.</div>
             <div className="Name">
               <div className="field">College Name*</div>
               <input

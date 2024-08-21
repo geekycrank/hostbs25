@@ -33,7 +33,7 @@ function Home() {
 
         <div className="Timer" style={{display:"flex",alignItems:"center",justifyContent:"center"}}>
           <CountdownTimer targetDate={targetDate} />
-          <p className='datee' style={{position:"absolute",bottom: "20%",fontFamily:"EFCOBrookshireRegular",fontSize:"1.3rem"}}>September 14</p>
+          <p className='datee' style={{position:"absolute",bottom: "20%",fontFamily:"EFCOBrookshireRegular",fontSize:"1.5rem"}}>September 14</p>
         </div> 
       </div>
 

@@ -280,7 +280,7 @@ function Register() {
             <div className="field">Are you participating in Drama?*</div>
             <div class="field">
               
-                **[NOTE : Select YES only if you are the Drama team lead, team members can answer NO.]
+                **NOTE : Select YES only if you are the Drama team lead, team members can answer NO.
               
             </div>
             <select
@@ -436,7 +436,7 @@ function Register() {
               <div className="field">Are you participating in Drama?*</div>
               <div>
               <h5 style={{fontWeight:"900;"}}>
-                **[NOTE : Select YES only if you are the Drama team lead, team members can answer NO.]
+                **NOTE : Select YES only if you are the Drama team lead, team members can answer NO.
               </h5>
             </div>
               <select

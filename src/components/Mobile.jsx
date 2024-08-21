@@ -85,7 +85,7 @@ function Mobile()
       prize:"2250",
       img: PuzzleCrosswordImage,
       title: "Puzzle",
-      description: "Prepare to twist your mind and challenge your thinking at our Puzzle Event! Dive into a world of brainteasers that will test your logic and creativity. From cryptic riddles to intricate puzzles, every challenge will test your logic and wit. Are you ready to unlock the mysteries?"
+      description: "Prepare to twist your mind and challenge your thinking at our Puzzle Event! Dive into a world of brainteasers that will test your logic and creativity. From cryptic riddles to intricate puzzles, every challenge will test your logic and wit.Ready to unlock the mysteries?"
     },
     {
       link: "/event9",
