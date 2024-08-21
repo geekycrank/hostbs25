@@ -5,7 +5,8 @@ import QrImage from '../assets/QrImage.jpg';
 import DramaForm from './DramaForm';
 
 function Register() {
-  const [formData, setFormData] = useState({
+ 
+  const initialFormData = {
     name: '',
     email: '',
     phone: '',
@@ -15,7 +16,8 @@ function Register() {
     events: [],
     drama: '',
     transactionId: '',
-  });
+  };
+  const [formData, setFormData] = useState(initialFormData);
 
   const [submitted,setSubmimtted]=useState(false);
   const [showDramaForm, setShowDramaForm] = useState(false);
@@ -70,11 +72,11 @@ function Register() {
       alert("Please enter a valid email address.");
       return false;
     }
-    if (!formData.phone || formData.phone.toString().length!=10) {
+    if (!formData.phone || formData.phone.toString().length!==10) {
       alert("Please enter a valid 10-digit phone number.");
       return false;
     }
-    if (!formData.whatsapp || formData.whatsapp.toString().length!=10) {
+    if (!formData.whatsapp || formData.whatsapp.toString().length!==10) {
       alert("Please enter a valid 10-digit WhatsApp number.");
       return false;
     }
@@ -162,7 +164,9 @@ function Register() {
     setShowDramaForm(true);
   } 
   else{
+    setFormData(initialFormData);
     setSubmimtted(false);
+
   }
   };
  
