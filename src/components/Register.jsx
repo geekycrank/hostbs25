@@ -147,17 +147,25 @@ function Register() {
     formPayload.append('entry.278090641', formData.drama);
     formPayload.append('entry.1561806219', formData.transactionId);
 
+
+    let response;
     try {
-      const response = await axios.post(googleFormUrl, formPayload, {
+      response = await axios.post(googleFormUrl, formPayload, {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       });
+      //console.log(response.status);  
+     
     } catch (error) {
+      console.log("hell")
       // console.error('Form submission error:', error);
     }
+  
 
-    alert("Form Submitted Successfully...")
+    alert("A confirmation email with your BS ID will be sent to your registered email address.");
+    
+
 
   setSubmimtted(true);
   if (formData.drama==="Yes") {
@@ -294,7 +302,7 @@ function Register() {
           </div>
           <h2 className="QrContent">Scan here to pay</h2>
           <div id="bottom" className="Name">
-            <div className="field">Transaction Id*</div>
+            <div className="field">UPI Transaction Id*</div>
             <input
               type="text"
               name="transactionId"
@@ -453,7 +461,7 @@ function Register() {
             </div>
             <h2 className="QrContent">Scan here to pay</h2>
             <div className="Name">
-              <div className="field">Transaction Id*</div>
+              <div className="field">UPI Transaction Id*</div>
               <input
                 type="text"
                 name="transactionId"

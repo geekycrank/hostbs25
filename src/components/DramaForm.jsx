@@ -92,6 +92,7 @@ function DramaForm(props) {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
       });
+    console.log(response);
     } catch (error) {
       console.error('Form submission error:', error);
       // alert('Form submission failed!');
