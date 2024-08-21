@@ -80,21 +80,21 @@ function Register() {
     // Log form data to console
     // console.log(formData.events);
 
-    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf7o5E-Ik8uufICKUNzkH-MNZmX9zRiryqYfHS1ZbJDuoePbw/formResponse';
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd05jedsuyjlyRIFIWVJ6BzYR2qNbBvX_IXAldorPG8BN6BpQ/formResponse';
     const formPayload = new URLSearchParams();
 
 
-    // https://docs.google.com/forms/d/e/1FAIpQLSf7o5E-Ik8uufICKUNzkH-MNZmX9zRiryqYfHS1ZbJDuoePbw/viewform?usp=pp_url&entry.793456051=Enter+the+name&entry.1377901283=Enter+the+email+address+&entry.1188561003=Enter+the+phone+&entry.278608533=Enter+the+whatsapp&entry.187174979=Enter+your+College+name&entry.1704798946=Enter+your+place&entry.691769816=List+the+events&entry.1370459820=Enter+yes+or+no+&entry.882209671=Enter+your+transaction+ID+
+    // https://docs.google.com/forms/d/e/1FAIpQLSd05jedsuyjlyRIFIWVJ6BzYR2qNbBvX_IXAldorPG8BN6BpQ/viewform?usp=pp_url&entry.1632981816=name&entry.661894537=email&entry.1331442710=phone&entry.547199976=whatsapp&entry.1278896726=college&entry.303090975=place&entry.1334032117=events&entry.278090641=drama&entry.1561806219=transactionId
 
-    formPayload.append('entry.793456051', formData.name);
-    formPayload.append('entry.1377901283', formData.email);
-    formPayload.append('entry.1188561003', formData.phone);
-    formPayload.append('entry.278608533', formData.whatsapp);
-    formPayload.append('entry.187174979', formData.college);
-    formPayload.append('entry.1704798946', formData.place);
-    formPayload.append('entry.691769816', formData.events.join(', '));
-    formPayload.append('entry.1370459820', formData.drama);
-    formPayload.append('entry.882209671', formData.transactionId);
+    formPayload.append('entry.1632981816', formData.name);
+    formPayload.append('entry.661894537', formData.email);
+    formPayload.append('entry.1331442710', formData.phone);
+    formPayload.append('entry.547199976', formData.whatsapp);
+    formPayload.append('entry.1278896726', formData.college);
+    formPayload.append('entry.303090975', formData.place);
+    formPayload.append('entry.1334032117', formData.events.join(', '));
+    formPayload.append('entry.278090641', formData.drama);
+    formPayload.append('entry.1561806219', formData.transactionId);
 
     try {
       const response = await axios.post(googleFormUrl, formPayload, {

@@ -37,15 +37,17 @@ function DramaForm(props) {
 
     console.log(formData);
 
-    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfUEArOoz2_V_cOEQpLU3fTHeTvRpjV9z3ijJ7ulz4YjW_gzg/formResponse';
+    // https://docs.google.com/forms/d/e/1FAIpQLSfhc7Q4RHqz8nT6f6tB13Ze4mNQom9MLS74PGnuNCoJzU2u5A/viewform?usp=pp_url&entry.1530474578=College&entry.1275313005=Lead+Name&entry.1826717709=TransactioId&entry.2143860045=LeadContact&entry.73265332=Alternate+contact&entry.1908464661=Members+Id
+
+    const googleFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSfhc7Q4RHqz8nT6f6tB13Ze4mNQom9MLS74PGnuNCoJzU2u5A/formResponse';
     const formPayload = new URLSearchParams();
 
-    formPayload.append('entry.1798773493', formData.name);
-    formPayload.append('entry.2125675122', formData.Lead_name);
-    formPayload.append('entry.1238267968', formData.Lead_bs_id);
-    formPayload.append('entry.335388284', formData.Lead_contact);
-    formPayload.append('entry.431618063', formData.alternate_contact);
-    formPayload.append('entry.1076179389', formData.members_bs_id);
+    formPayload.append('entry.1530474578', formData.name);
+    formPayload.append('entry.1275313005', formData.Lead_name);
+    formPayload.append('entry.1826717709', formData.Lead_bs_id);
+    formPayload.append('entry.2143860045', formData.Lead_contact);
+    formPayload.append('entry.73265332', formData.alternate_contact);
+    formPayload.append('entry.1908464661', formData.members_bs_id);
 
     try {
       const response = await axios.post(googleFormUrl, formPayload, {
