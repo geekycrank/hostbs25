@@ -28,7 +28,8 @@ function Home() {
         <div className="Brainstrain-name">
           <h1>BrainStrain '24</h1>
           
-          <p>starts in</p>
+          <p className='event-status'></p>
+          
         </div>
 
         <div className="Timer" style={{display:"flex",alignItems:"center",justifyContent:"center"}}>

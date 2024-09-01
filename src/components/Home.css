@@ -232,6 +232,28 @@
     
     
 }
+.event-status {
+    display: block;
+  }
+  
+  @media (min-width: 1100px) {
+    .event-status::before {
+      content: "starts on";
+    }
+    .event-status::after {
+      content: "";
+    }
+  }
+  
+  @media (max-width: 1100px) {
+    .event-status::before {
+      content: "starts in";
+    }
+    .event-status::after {
+      content: "";
+    }
+  }
+  
 .about-content{
     display: flex;
     flex-direction: column;

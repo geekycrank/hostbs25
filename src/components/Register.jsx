@@ -302,7 +302,7 @@ function Register() {
           </div>
           <h2 className="QrContent">Scan here to pay</h2>
           <div id="bottom" className="Name">
-            <div className="field">UPI Transaction Id*</div>
+            <div className="field">UPI Transaction Id* ( Eg: 1234XXXXXX5678, not abcd@okxyzbank )</div>
             <input
               type="text"
               name="transactionId"
@@ -461,7 +461,7 @@ function Register() {
             </div>
             <h2 className="QrContent">Scan here to pay</h2>
             <div className="Name">
-              <div className="field">UPI Transaction Id*</div>
+              <div className="field">UPI Transaction Id* ( Eg: 1234XXXXXX5678, not abcd@okxyzbank )</div>
               <input
                 type="text"
                 name="transactionId"
