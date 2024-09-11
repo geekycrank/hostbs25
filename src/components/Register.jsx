@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import "./Register.css";
-import QrImage from '../assets/QrImage.jpg';
+import QrImage from '../assets/QrImage.jpeg';
 import DramaForm from './DramaForm';
 
 function Register() {
