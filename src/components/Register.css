@@ -27,7 +27,7 @@
     max-width: 100vw;              /* Full viewport height */
     color: white;                 /* Text color to stand out against the background */
     text-align: center;
-   
+    flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;

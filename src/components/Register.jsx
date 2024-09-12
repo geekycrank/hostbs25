@@ -106,8 +106,10 @@ function Register() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    alert("Form is disabled!!!");
+ 
 
-
+/*
     if (!validateForm()) {
       return;
     }
@@ -176,12 +178,19 @@ function Register() {
     setSubmimtted(false);
 
   }
+  */
   };
  
   
    return (<div className="Register">
+   <div class="reg-close" style={{paddingTop: "4%",width: "80%"}}>
+    <h2 style={{ackgroundColor: "#eadecb",padding: "2%",borderRadius:"25px",color:"black",fontFamily:"Giaza"}}>Online registrations are closed. On-spot registration will be available on Saturday morning for Rs. 220.</h2>
+   </div>
+   
     {!submitted ? (
+
       <form className="form" >
+     
         <div className="heading1">EVENT REGISTRATION</div>
 
         <div className="topFrame">
