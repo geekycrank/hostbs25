@@ -307,7 +307,8 @@ function Register() {
           </div>
          
           <div id="MobQr">
-            <img src={QrImage} alt="QR Code for Payment" />
+            {/* <img src={QrImage} alt="QR Code for Payment" /> */}
+            Registration Closed
           </div>
           <h2 className="QrContent">Scan here to pay</h2>
           <div id="bottom" className="Name">
@@ -464,7 +465,8 @@ function Register() {
             <div style={{ display: "flex", flexDirection: "column", justifyContent: 'center', alignItems: "center", fontFamily: "kurale", color: "black", margin: "2%" }}>
              
               <div className='deskqr'>
-                <img src={QrImage} alt="QR Code for Payment" />
+                {/* <img src={QrImage} alt="QR Code for Payment" /> */}
+                Registration Closed
               </div>
               <h4>Scan here to pay</h4>
             </div>
