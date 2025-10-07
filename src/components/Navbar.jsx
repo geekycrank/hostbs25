@@ -20,7 +20,6 @@ function Navbar() {
           <Link to="/" className={currentPath === "/" ? "active" : ""}>Home</Link>
           <Link to="/Events" className={currentPath === "/Events" ? "active" : ""}>Events</Link>
           <Link to="/Register" className={currentPath === "/Register" ? "active" : ""}>Register</Link>
-          <Link to="/Ca" className={currentPath === "/Ca" ? "active" : ""}>Referral Code</Link>
           {(currentPath !== "/Events" && currentPath !== "/Register" && currentPath !== "/Ca") && (
   <div className="contact-link-wrapper">
     <a href="#Contact" className={currentPath === "#Contact" ? "active" : ""}>Contact</a>
