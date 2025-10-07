@@ -1,11 +1,10 @@
-
 .navbarr {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 72px;              /* fixed navbar height */
-  background-color: rgb(34, 16, 22); /* deep maroon/dark purple */
+  height: 60px;
+  background-color: rgb(34, 16, 22);
   color: #eadecb;
   display: flex;
   align-items: center;
@@ -27,15 +26,13 @@
 .nav-left {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .logo {
-  width: 60px;
-  height: 60px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid rgba(255,255,255,0.06);
   background: #fff;
 }
 
@@ -47,15 +44,16 @@
   letter-spacing: 1px;
 }
 
-/* Right: nav links */
+/* Right: nav links (desktop) */
 .nav-links {
   display: flex;
-  gap: auto;
   align-items: center;
   font-family: "Britannica", sans-serif;
+  transition: all 0.3s ease;
 }
 
-.nav-links a, .nav-links a:visited {
+.nav-links a,
+.nav-links a:visited {
   color: #eadecb;
   text-decoration: none;
   font-size: 1.05rem;
@@ -64,48 +62,71 @@
   transition: background 0.18s, color 0.18s, transform 0.12s;
 }
 
-/* small decorative hover spark */
 .nav-links a:hover {
   color: #fff;
   background: rgba(255,255,255,0.03);
   transform: translateY(-1px);
 }
 
-/* active link highlight */
 .nav-links a.active {
   background: rgba(247, 183, 49, 0.12);
   color: #f7b731;
   font-weight: 600;
 }
 
- @media (max-width: 450px) {
-  .nav-links {
-    gap: 0px;
-    font-size: smaller;
+/* Hamburger icon hidden on desktop */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* ---------- Responsive (Mobile) ---------- */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
   }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    right: 0;
+    background-color: rgb(34, 16, 22);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    transform: translateY(-120%);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-links.open {
+    transform: translateY(0);
+    opacity: 1;
+    pointer-events: auto;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+    border-radius: 0;
+    transition: background 0.3s;
+  }
+
+  .nav-links a:hover {
+    background: rgba(255,255,255,0.05);
+  }
+
   .brainstrain {
     font-size: 1rem;
   }
+
   .logo {
     width: 45px;
     height: 45px;
   }
-
-/* Ensure contact link also follows same styling */
-.contact-link-wrapper {
-  width: 100%;
-  position: absolute;
-  top : 65px;
-  left: 80%;
 }
-
-.contact-link-wrapper a {
-  display: block;
-  width: 100%;
-  padding: 10px 12px;
-  border-radius: 6px;
-}
-
-} 
-
-
