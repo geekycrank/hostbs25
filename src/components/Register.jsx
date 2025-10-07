@@ -141,7 +141,7 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
       <div className="onspot-banner">
         On-spot registration will be available on Saturday morning for Rs. 250.
         <br/><br/>
-        <h5>(if you plan on referring others use below referral code page to register to get your referral code)</h5>
+        <h5>(if you plan on referring others use below referral code page for registration and to get your referral code or continue here for normal regisrtation)</h5>
         <Link to="/Ca">
   <button className="referral-button">Go to Referral Code Section</button>
 </Link>
