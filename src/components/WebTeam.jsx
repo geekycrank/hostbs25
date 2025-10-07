@@ -1,7 +1,7 @@
 import React from "react";
 import "./WebTeam.css";
 
-import abi from "../assets/abinesh.jpg";
+import abi from "../assets/abinesh1.jpg";
 import deva from "../assets/deva.jpg";
 import saro from "../assets/saravana.jpg";
 import janani from "../assets/janani.jpg";

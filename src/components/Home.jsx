@@ -5,8 +5,7 @@ import "./Home.css";
 import moon from "../assets/moon.png";
 import castle from "../assets/castle.png";
 import witch from "../assets/witch.png";
-import typography from "../assets/BStypography.png";
-import broom from "../assets/broom.png";
+import typography from "../assets/BS typography.png";
 import bats from "../assets/bats.png";
 import vector1 from "../assets/vector1.png"; // left cloud
 import vector2 from "../assets/vector2.png"; // right cloud
@@ -38,7 +37,7 @@ function Home() {
         <div className="hero-content">
           <div className="hero-top-text">
             <br /> <br />
-            <h2>The Literary and Debating Society</h2>
+            <h3>The Literary and Debating Society </h3>
             <h3>Presents</h3>
           </div>
 
@@ -49,7 +48,6 @@ function Home() {
   className="title" 
   style={{height: 'auto',backgroundColor: 'transparent', borderRadius: '10px', padding: '5px'}}
 />
-          <img src={broom} alt="broom" className="broom-icon"/>
       
 
           {/* Timer block (flow layout — not absolutely positioned) */}
@@ -82,7 +80,7 @@ function Home() {
 
       {/* Web team (carousel) */}
       <section className="webteam-section">
-        <h2>Web Team</h2>
+        <h2>Web Team <style>{`.webteam-section { font-family: "Britannica", sans-serif; }`}</style></h2>
         <WebTeam />
       </section>
 

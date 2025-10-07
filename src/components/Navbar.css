@@ -40,7 +40,7 @@
 }
 
 .brainstrain {
-  font-family: "EFCOBrookshireRegular", serif;
+  font-family: "Britannica", sans-serif;
   font-size: 1.4rem;
   margin: 0;
   color: #eadecb;
@@ -52,7 +52,7 @@
   display: flex;
   gap: auto;
   align-items: center;
-  font-family: "EFCOBrookshireRegular", serif;
+  font-family: "Britannica", sans-serif;
 }
 
 .nav-links a, .nav-links a:visited {

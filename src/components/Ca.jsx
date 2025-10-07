@@ -110,7 +110,7 @@ function Ca() {
       <br />
       <br />
       <div className="notice">
-        On-spot registration will be available on Saturday morning for Rs. 220.<br/><br/>
+        On-spot registration will be available on Saturday morning for Rs. 250.<br/><br/>
         (if your referral code is used by 9 or more during registration you will
         get 100rs refund from your registration payment )
       </div>

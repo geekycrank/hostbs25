@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Register.css';
+import {  Link } from "react-router-dom";
 import qrCode from '../assets/qr-code.jpg';
 
 const initialFormData = {
@@ -138,10 +139,14 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
     <div>
       <br/><br/><br/>
       <div className="onspot-banner">
-        On-spot registration will be available on Saturday morning for Rs. 220.
+        On-spot registration will be available on Saturday morning for Rs. 250.
         <br/><br/>
-        <h4>(if you plan on referring others use referral code page to register)</h4>
+        <h5>(if you plan on referring others use below referral code page to register to get your referral code)</h5>
+        <Link to="/Ca">
+  <button className="referral-button">Go to Referral Code Section</button>
+</Link>
 
+          
       </div>
       <div className="registration-container">
         <h2>Event Registration</h2>
