@@ -460,6 +460,8 @@
 
 @media (max-width: 620px) {
   .tree-left {  left: -4%; bottom: 10%}
+  .cloud {opacity:15%}
+  .moon { width: 320px; top: 15%;}
 }
 
 
