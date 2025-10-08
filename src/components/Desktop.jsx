@@ -45,7 +45,7 @@ function Desktop() {
     },
     {
       link: "/event4",
-      contact: "7540009703",
+      contact: "9894579749",
       prize: "priceless🥹",
       img: mm,
       title: "The Arcane Challenge",
@@ -63,12 +63,12 @@ function Desktop() {
     },
     {
       link: "/event6",
-      contact: "8667721591",
+      contact: "7540009703",
       prize: "1500",
       img: MicrotaleImage,
       title: "Microtale",
       description:
-        "With Embark on a literary journey of brevity and depth at our Microtale event! With just a few words, weave stories that linger in minds and hearts. Join us for poetic magic where the tiniest tales hold the mightiest power by unleashing your creativity and crafting miniature worlds where every letter counts.",
+        "Unleash your creativity in our Microtale event — craft tiny tales in few words, where every letter holds mighty magic!",
     },
     {
       link: "/event7",
@@ -77,7 +77,7 @@ function Desktop() {
       img: PoemImage,
       title: "Poem",
       description:
-        "Step Let your words dance with emotions and paint vivid pictures through poetry! This event is a stage for your imagination, where creativity meets expression, and every verse tells a story straight from the heart. a realm where words dance with imagery. The participants will be given a picture about which they have to write a poem entitled with a fitting topic.",
+        "Let your words flow in verse, where imagination meets emotion and every line becomes a heartfelt expression through poetry!",
     },
     {
       link: "/event8",
@@ -104,7 +104,7 @@ function Desktop() {
       img: ShipwreckImage,
       title: "Shipwreck",
       description:
-        "A tempest Your ship is sinking, and there’s only one life jacket left. But you’re not yourself — you’ve become someone else: Narendra Modi, Shinchan or even Iron Man! Your mission? Step into your assigned character and convince the captain you deserve the life jacket. It’s not about strength — it’s about wit, humour, drama, and persuasion. wit and humour, where you're a crewmate on a sinking ship with one life jacket. Convince the captain to save you!",
+        "Stranded in the middle of the ocean, your ship is sinking fast. As your character, it’s your last chance to convince the captain that the survival should be yours!",
     },
     {
       link: "/event11",
@@ -113,7 +113,7 @@ function Desktop() {
       img: UnoMinutoImage,
       title: "Uno Minuto",
       description:
-        "The stage Are you a person who can stun the observer with your electrifying performance? Then, this is for you! The stage is all yours for those 60 seconds. May it be any talent that makes you unique, may it be anything. Come on, people! Indulge us in astonishment with your stunning talents! The stage awaits. all yours for 60 seconds! Show any talent that makes you unique—sing, act, dance, or amaze us with something unexpected.",
+        "Got talent but no stage? Unominuto welcomes you all. You can sing, dance, solve a Rubik's cube, or show off any skill you're pro at — just own the stage for a minute, and you're good to go!",
     },
   ];
 
