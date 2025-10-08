@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './Register.css';
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import qrCode from '../assets/qr-code.jpg';
 
 const initialFormData = {
@@ -17,34 +17,16 @@ const initialFormData = {
 };
 
 const eventOptions = [
-  "Debate", "Dosthana", "Drama", "Adzap", "Puzzle",
+  "Debate", "Arcane Challenge", "Drama", "Adzap", "Puzzle",
   "Quiz", "Jam", "Uno minuto", "Shipwreck", "Poem and Microtale"
 ];
 
-const SHEETDB_URL = "https://sheetdb.io/api/v1/xdeb6icxog3e9";
-const SHEETDB_URL1 = "https://sheetdb.io/api/v1/e604n6fpmqx8h";
+const SHEETDB_URL = "https://sheetdb.io/api/v1/7as0hw3kysdg7";
 
 function Registration() {
   const [formData, setFormData] = useState(initialFormData);
   const [loading, setLoading] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [validReferralCodes, setValidReferralCodes] = useState([]); // ✅ dynamic referral codes
-
-  // ✅ Fetch referral codes on mount
-  useEffect(() => {
-    const fetchReferralCodes = async () => {
-      try {
-        const res = await fetch(`${SHEETDB_URL1}`);
-
-        const data = await res.json();
-        const codes = data.map(item => item.referralCode?.trim());
-        setValidReferralCodes(codes);
-      } catch (err) {
-        console.error("Error fetching referral codes", err);
-      }
-    };
-    fetchReferralCodes();
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -73,12 +55,6 @@ function Registration() {
     if (!formData.events.length) return "Please select at least one event.";
     if (!formData.drama) return "Please select your participation in drama.";
     if (!formData.transactionId) return "Please enter your transaction ID.";
-
-    // ✅ Dynamic referral validation
-    if (formData.referralCode && !validReferralCodes.includes(formData.referralCode.trim())) {
-      return "Invalid referral code. Please check again.";
-    }
-
     return null;
   };
 
@@ -89,31 +65,20 @@ function Registration() {
       alert(error);
       return;
     }
+
     setLoading(true);
     try {
-      let dataWithTimestamp = {
+      const dataWithTimestamp = {
         ...formData,
         timestamp: new Date().toISOString()
       };
-
-      // ✅ Track referral usage if entered
-      if (formData.referralCode) {
-        try {
-          // SheetDB format: /search/COLUMN_NAME?VALUE
-const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referralCode.trim()}`);
-          const data = await res.json();
-          const usageCount = data.length;
-          dataWithTimestamp.referralUsageCount = usageCount + 1;
-        } catch (err) {
-          console.error("Error tracking referral code", err);
-        }
-      }
 
       await fetch(SHEETDB_URL, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ data: dataWithTimestamp })
       });
+
       setSubmitted(true);
     } catch (err) {
       alert("Something went wrong. Please try again.");
@@ -125,7 +90,7 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
   if (submitted) {
     return (
       <div className="registration-container">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
         <h2>Submission Successful!</h2>
         <h1>Your registration has been received.</h1>
         {formData.referralCode && (
@@ -137,17 +102,16 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
 
   return (
     <div>
-      <br/><br/><br/>
+      <br /><br /><br />
       <div className="onspot-banner">
         On-spot registration will be available on Saturday morning for Rs. 250.
-        <br/><br/>
-        <h5>(if you plan on referring others use below referral code page for registration and to get your referral code or continue here for normal regisrtation)</h5>
+        <br /><br />
+        <h5>(If you plan on referring others use the referral code page to generate your code or continue here for normal registration)</h5>
         <Link to="/Ca">
-  <button className="referral-button">Go to Referral Code Section</button>
-</Link>
-
-          
+          <button className="referral-button">Go to Referral Code Section</button>
+        </Link>
       </div>
+
       <div className="registration-container">
         <h2>Event Registration</h2>
         <form onSubmit={handleSubmit}>
@@ -188,20 +152,20 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
           </div>
 
           {/* Events */}
-         <label className="events-title">Events Participating *<br/><p>(click on the on the box to select events)</p></label>
-            <div className="events-section">
-              {eventOptions.map((event) => (
-                <label key={event}>
-                  <input
-                    type="checkbox"
-                    value={event}
-                    checked={formData.events.includes(event)}
-                    onChange={handleCheckboxChange}
-                  />
-                  <span>{event}</span>
-                </label>
-              ))}
-            </div>
+          <label className="events-title">Events Participating *<br /><p>(click the box to select events)</p></label>
+          <div className="events-section">
+            {eventOptions.map((event) => (
+              <label key={event}>
+                <input
+                  type="checkbox"
+                  value={event}
+                  checked={formData.events.includes(event)}
+                  onChange={handleCheckboxChange}
+                />
+                <span>{event}</span>
+              </label>
+            ))}
+          </div>
 
           {/* Drama Participation */}
           <div className="note">
@@ -217,21 +181,21 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
           </select>
 
           {formData.drama === "Yes" && (
-  <div style={{ marginTop: "12px" }}>
-    <a
-      href="https://docs.google.com/forms/d/e/1FAIpQLSf32CjcGmYg4kSdJI55N4pTm4-SOe_gd9nu2FA3iSdQhGRUHg/viewform?usp=dialog"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="google-form-button"
-    >
-      Fill Drama Details
-    </a>
-  </div>
-)}
+            <div style={{ marginTop: "12px" }}>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf32CjcGmYg4kSdJI55N4pTm4-SOe_gd9nu2FA3iSdQhGRUHg/viewform?usp=dialog"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="google-form-button"
+              >
+                Fill Drama Details
+              </a>
+            </div>
+          )}
 
           {/* Referral Code (Optional) */}
           <div className="form-group">
-            <label>Referral Code (Optional)</label>
+            <label>Referral Code if any (Optional but ensure correctness!)</label>
             <input
               type="text"
               name="referralCode"
@@ -243,7 +207,7 @@ const res = await fetch(`${SHEETDB_URL1}/search?referralCode=${formData.referral
 
           {/* QR + Transaction ID */}
           <div className="qr-section">
-            <h4>Scan Here to Pay<br/> For any queries regarding payment contact -+91 9123576842</h4>
+            <h4>Scan Here to Pay<br />For any queries regarding payment contact - +91 9123576842</h4>
             <div className="qr-box"><img src={qrCode} alt="QR Code" /></div>
           </div>
           <div className="transaction-label">

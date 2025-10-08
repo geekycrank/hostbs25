@@ -18,11 +18,11 @@ function Ca() {
   const [submitted, setSubmitted] = useState(false);
   const [referralCode, setReferralCode] = useState("");
 
-  const SHEETDB_URL1 = "https://sheetdb.io/api/v1/e604n6fpmqx8h";
+  const SHEETDB_URL1 = "https://sheetdb.io/api/v1/3q7bgu88q13uc";
 
   const eventOptions = [
     "Debate",
-    "Dosthana",
+    "Arcane Challenge",
     "Drama",
     "Adzap",
     "Puzzle",
