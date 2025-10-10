@@ -106,6 +106,8 @@ function Registration() {
       <div className="onspot-banner">
         On-spot registration will be available on Saturday morning for Rs. 250.
         <br /><br />
+        <h5 style ={{color: 'red'}}>Hurry! early bird offer ends on 14th October 23.59(IST)</h5>
+        <br />
         <h5>(If you plan on referring others use the referral code page to generate your code or continue here for normal registration)</h5>
         <Link to="/Ca">
           <button className="referral-button">Go to Referral Code Section</button>
