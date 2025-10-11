@@ -279,6 +279,12 @@ select {
   background: #6a4c7a;
 }
 
+
+.submit-btn.submitting {
+  background-color: #0a9655; /* gray to indicate loading */
+  cursor: not-allowed;
+  transform: none;
+}
 /*NOTES & BANNER */
 .note {
   font-size: 1.6rem;

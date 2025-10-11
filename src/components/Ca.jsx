@@ -16,6 +16,7 @@ function Ca() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [referralCode, setReferralCode] = useState("");
 
   const SHEETDB_URL1 = "https://sheetdb.io/api/v1/3q7bgu88q13uc";
@@ -51,6 +52,8 @@ function Ca() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  
+
   // Event checkbox toggle
   const handleCheckboxChange = (e) => {
     const { value, checked } = e.target;
@@ -63,11 +66,39 @@ function Ca() {
     setFormData({ ...formData, events: updatedEvents });
   };
 
+
+  const validateForm = () => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+    if (!formData.name) return "Please enter your name.";
+    if (!formData.email || !emailPattern.test(formData.email)) return "Please enter a valid email address.";
+    if (!formData.phone || formData.phone.toString().length !== 10) return "Please enter a valid 10-digit phone number.";
+    if (!formData.whatsapp || formData.whatsapp.toString().length !== 10) return "Please enter a valid 10-digit WhatsApp number.";
+    if (!formData.collegeName) return "Please enter your college name.";
+    if (!formData.collegeCity) return "Please enter your college city.";
+    if (!formData.events.length) return "Please select at least one event.";
+    if (!formData.drama) return "Please select your participation in drama.";
+    if (!formData.upi) return "Please enter your UPI ID.";
+    return null;
+  };
+
+  
+
   // Submit
   const handleSubmit = async (e) => {
+
+     setLoading(true);
     e.preventDefault();
+    const error = validateForm();
+    if (error) {
+      alert(error);
+      setLoading(false);
+      return;
+    }
     const code = await generateReferralCode();
     setReferralCode(code);
+
+   
+    // Prepare payload  
 
     const payload = {
       data: [
@@ -99,6 +130,7 @@ function Ca() {
         alert("Error submitting form. Try again!");
       }
     } catch (error) {
+      setLoading(false);
       console.error("Error:", error);
       alert("Error submitting form. Try again!");
     }
@@ -243,9 +275,13 @@ function Ca() {
             />
 
             {/* Submit */}
-            <button type="submit" className="submit-btn">
-              Submit
-            </button>
+           <button
+                type="submit"
+                 className={`submit-btn ${loading ? "submitting" : ""}`}
+                   disabled={loading}
+>
+                   {loading ? "Submitting..." : "Submit"}
+           </button>
           </form>
         </div>
       ) : (

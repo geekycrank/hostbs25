@@ -59,14 +59,17 @@ function Registration() {
   };
 
   const handleSubmit = async (e) => {
+
+    setLoading(true);
     e.preventDefault();
     const error = validateForm();
     if (error) {
       alert(error);
+      setLoading(false);
       return;
     }
 
-    setLoading(true);
+    
     try {
       const dataWithTimestamp = {
         ...formData,
@@ -224,9 +227,14 @@ function Registration() {
           />
 
           {/* Submit */}
-          <button type="submit" className="submit-btn" disabled={loading}>
-            {loading ? "Submitting..." : "Submit"}
-          </button>
+          <button
+                type="submit"
+                 className={`submit-btn ${loading ? "submitting" : ""}`}
+                   disabled={loading}
+>
+                   {loading ? "Submitting..." : "Submit"}
+           </button>
+
         </form>
       </div>
     </div>

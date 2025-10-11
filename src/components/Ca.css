@@ -277,6 +277,12 @@
     padding: 7px 8px;
     border-radius: 18px;
   }
+
+  .submit-btn.submitting {
+  background-color: #0a9655; /* gray to indicate loading */
+  cursor: not-allowed;
+  transform: none;
+}
   .success-box {
     padding: 12px;
     border-radius: 8px;
