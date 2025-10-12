@@ -330,3 +330,14 @@ select {
   background-color: #ffcc4d;
   transform: translateY(-1px);
 }
+
+.blinking-text {
+  color: red;
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
