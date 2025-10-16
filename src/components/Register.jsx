@@ -110,7 +110,7 @@ function Registration() {
         On-spot registration will be available on Saturday morning for Rs. 250.
         <br /><br />
         <h5 className="blinking-text">
-  Hurry! early bird offer (reg for Rs.180) ends on 16th October 23.59 (IST)
+  Hurry! early bird offer (reg for Rs.180) ends soon!
 </h5>
 
         
