@@ -107,10 +107,10 @@ function Registration() {
     <div>
       <br /><br /><br />
       <div className="onspot-banner">
-        On-spot registration will be available on Saturday morning for Rs. 250.
+        On-spot registration will be available on Saturday morning for Rs. 220.
         <br /><br />
         <h5 className="blinking-text">
-  Hurry! early bird offer (reg for Rs.180) ends soon!
+  online registrations for Rs. 180, are closing tomorrow hurry!
 </h5>
 
         
