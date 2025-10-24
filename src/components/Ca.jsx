@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Ca.css";
-import qrCode from '../assets/qr-code.jpg';
+//import qrCode from '../assets/qr-code.jpg';
 
 function Ca() {
   const [formData, setFormData] = useState({
@@ -142,11 +142,23 @@ function Ca() {
       <br />
       <br />
       <div className="notice">
-        On-spot registration will be available on Saturday morning for Rs. 250.<br/><br/>
-        (if your referral code is used by 9 or more during registration you will
-        get 100rs refund from your registration payment )
-      </div>
+        On-spot registration will be available on Saturday morning(25th oct) for Rs. 220.<br/><br/>
 
+        Sorry online registrations have been closed  :)
+        <br />
+        <br />
+        <h5>Venue</h5>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2574018000255!2d76.93600867556461!3d11.019304189144632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858ddcb9b7909%3A0x16e6f56a7edcddcc!2sGCT%20Entrance%2C%20Anaikatti%20Rd%2C%20Tamil%20Nadu%20Agricultural%20University%2C%20P%20N%20Pudur%2C%20Coimbatore%2C%20Tamil%20Nadu%20641013!5e0!3m2!1sen!2sin!4v1761321591542!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+{/* 
       {!submitted ? (
         <div className="ca-form-container">
           <h2 className="form-title">
@@ -154,7 +166,7 @@ function Ca() {
           </h2>
 
           <form className="ca-form" onSubmit={handleSubmit}>
-            {/* Name & Email */}
+            {/* Name & Email }
             <div className="form-row">
               <input
                 type="text"
@@ -172,7 +184,7 @@ function Ca() {
               />
             </div>
 
-            {/* Phone & WhatsApp */}
+            {/* Phone & WhatsApp *}
             <div className="form-row">
               <input
                 type="text"
@@ -190,7 +202,7 @@ function Ca() {
               />
             </div>
 
-            {/* College & City */}
+            {/* College & City *}
             <div className="form-row">
               <input
                 type="text"
@@ -208,7 +220,7 @@ function Ca() {
               />
             </div>
 
-            {/* Events Section */}
+            {/* Events Section *}
             <label className="events-title">Events Participating *<br/><p>(click on the on the box to select events)</p></label>
             <div className="events-section">
               {eventOptions.map((event) => (
@@ -224,7 +236,7 @@ function Ca() {
               ))}
             </div>
 
-            {/* Drama Section */}
+            {/* Drama Section *}
             <div className="drama-note">
               Are you participating in Drama?*
               <span>
@@ -259,7 +271,7 @@ function Ca() {
   </div>
 )}
 
-            {/* Payment */}
+            {/* Payment *}
             <div className="qr-section">
               <p>Scan Here to Pay <br/> For any queries regarding payment contact -+91 9123576842</p>
               <div className="qr-placeholder"><img src={qrCode} alt="QR Code" /></div>
@@ -274,7 +286,7 @@ function Ca() {
               required
             />
 
-            {/* Submit */}
+            {/* Submit *}
            <button
                 type="submit"
                  className={`submit-btn ${loading ? "submitting" : ""}`}
@@ -294,8 +306,8 @@ function Ca() {
             get points!
           </p>
         </div>
-      )}
-    </div>
+      )}*/}
+    </div> 
   );
 }
 

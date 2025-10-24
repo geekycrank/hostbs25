@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Register.css';
-import { Link } from "react-router-dom";
-import qrCode from '../assets/qr-code.jpg';
+// import { Link } from "react-router-dom";
+// import qrCode from '../assets/qr-code.jpg';
 
 const initialFormData = {
   name: '',
@@ -106,25 +106,32 @@ function Registration() {
   return (
     <div>
       <br /><br /><br />
-      <div className="onspot-banner">
-        On-spot registration will be available on Saturday morning for Rs. 220.
-        <br /><br />
-        <h5 className="blinking-text">
-  online registrations for Rs. 180, are closing tomorrow hurry!
-</h5>
+      <div className="onspot-banner" style ={{color: '#e0930dff'}}>
+        Sorry online registrations have been closed  :) <br/><br/>
+        On-spot registration will be available on Saturday morning(25th oct) for Rs. 220.
+        <br />
 
         
         <br />
-        <h5>(If you plan on referring others use the referral code page to generate your code or continue here for normal registration)</h5>
-        <Link to="/Ca">
-          <button className="referral-button">Go to Referral Code Section</button>
-        </Link>
+       <h5>Venue : Goverment College of Technology, Coimbatore</h5>
+<iframe
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2574018000255!2d76.93600867556461!3d11.019304189144632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858ddcb9b7909%3A0x16e6f56a7edcddcc!2sGCT%20Entrance%2C%20Anaikatti%20Rd%2C%20Tamil%20Nadu%20Agricultural%20University%2C%20P%20N%20Pudur%2C%20Coimbatore%2C%20Tamil%20Nadu%20641013!5e0!3m2!1sen!2sin!4v1761321591542!5m2!1sen!2sin"
+  width="600"
+  height="450"
+  style={{ border: 0 }}
+  allowFullScreen=""
+  loading="lazy"
+  referrerPolicy="no-referrer-when-downgrade"
+  title="GCT Map"
+/>
+
+
       </div>
 
-      <div className="registration-container">
+      {/* <div className="registration-container">
         <h2>Event Registration</h2>
         <form onSubmit={handleSubmit}>
-          {/* Name & Email */}
+          {/* Name & Email }
           <div className="form-row">
             <div className="form-group">
               <label>Name *</label>
@@ -136,7 +143,7 @@ function Registration() {
             </div>
           </div>
 
-          {/* Phone & Whatsapp */}
+          {/* Phone & Whatsapp }
           <div className="form-row">
             <div className="form-group">
               <label>Phone No *</label>
@@ -148,7 +155,7 @@ function Registration() {
             </div>
           </div>
 
-          {/* College & Place */}
+          {/* College & Place }
           <div className="form-row">
             <div className="form-group">
               <label>College Name *</label>
@@ -160,7 +167,7 @@ function Registration() {
             </div>
           </div>
 
-          {/* Events */}
+          {/* Events }
           <label className="events-title">Events Participating *<br /><p>(click the box to select events)</p></label>
           <div className="events-section">
             {eventOptions.map((event) => (
@@ -176,7 +183,7 @@ function Registration() {
             ))}
           </div>
 
-          {/* Drama Participation */}
+          {/* Drama Participation }
           <div className="note">
             Are you participating in Drama?*<br />
             <span>
@@ -202,7 +209,7 @@ function Registration() {
             </div>
           )}
 
-          {/* Referral Code (Optional) */}
+          {/* Referral Code (Optional) }
           <div className="form-group">
             <label>Referral Code if any (Optional but ensure correctness!)</label>
             <input
@@ -214,7 +221,7 @@ function Registration() {
             />
           </div>
 
-          {/* QR + Transaction ID */}
+          {/* QR + Transaction ID }
           <div className="qr-section">
             <h4>Scan Here to Pay<br />For any queries regarding payment contact - +91 9123576842</h4>
             <div className="qr-box"><img src={qrCode} alt="QR Code" /></div>
@@ -230,7 +237,7 @@ function Registration() {
             required
           />
 
-          {/* Submit */}
+          {/* Submit }
           <button
                 type="submit"
                  className={`submit-btn ${loading ? "submitting" : ""}`}
@@ -239,8 +246,8 @@ function Registration() {
                    {loading ? "Submitting..." : "Submit"}
            </button>
 
-        </form>
-      </div>
+        </form> 
+      </div>*/ }
     </div>
   );
 }
