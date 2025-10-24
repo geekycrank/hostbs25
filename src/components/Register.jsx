@@ -116,8 +116,8 @@ function Registration() {
        <h5>Venue : Goverment College of Technology, Coimbatore</h5>
 <iframe
   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.2574018000255!2d76.93600867556461!3d11.019304189144632!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba858ddcb9b7909%3A0x16e6f56a7edcddcc!2sGCT%20Entrance%2C%20Anaikatti%20Rd%2C%20Tamil%20Nadu%20Agricultural%20University%2C%20P%20N%20Pudur%2C%20Coimbatore%2C%20Tamil%20Nadu%20641013!5e0!3m2!1sen!2sin!4v1761321591542!5m2!1sen!2sin"
-  width="600"
-  height="450"
+  width="300"
+  height="200"
   style={{ border: 0 }}
   allowFullScreen=""
   loading="lazy"
